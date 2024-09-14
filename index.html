@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Header</title>
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <!-- bootstrap css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- custom css -->
+  <link href="scss/main.css" rel="stylesheet">
+</head>
+
+<body>
+  
+  <!-- profile aside -->
+  <aside class="profile | d-none d-xl-inline-flex">
+    <div class="profile__img-box">
+      <img src="img/vishal-vadher.png" alt="Vishal Vadher" class="profile__img | object-fit-cover" height="250" width="250">
+      <h2 class="profile__name">Vishal Vadher</h2>
+    </div>
+    <div class="profile__info">
+      <div class="profile__info-box">
+        <h3 class="profile__info-heading | fw-medium">Specialization:</h3>
+        <p class="profile__info-desc | fw-medium mt-2">HTML, CSS, JavaScript, and Webflow.</p>
+      </div>
+      <div class="profile__info-box">
+        <h3 class="profile__info-heading | fw-medium">Based In:</h3>
+        <p class="profile__info-desc | fw-medium mt-2">Ahmedabad, India</p>
+      </div>
+    </div>
+    <ul class="profile__social-list">
+      <li>
+        <a href="#" class="profile__social-link">
+          <img src="img/linkedin-icon.svg" alt="LinkedIn" class="profile__social-icon | object-fit-contain" height="24" width="24">
+        </a>
+      </li>
+      <li>
+        <a href="#" class="profile__social-link">
+          <img src="img/github-icon.svg" alt="Github" class="profile__social-icon | object-fit-contain" height="24" width="24">
+        </a>
+      </li>
+      <li>
+        <a href="#" class="profile__social-link">
+          <img src="img/skype-icon.svg" alt="Skype" class="profile__social-icon | object-fit-contain" height="24" width="24">
+        </a>
+      </li>
+    </ul>
+  </aside>
+
+  <!-- header -->
+  <header class="header">
+    <div class="px-xl-5 mx-lg-3">
+      <!-- header mobile -->
+      <div class="header__topbar">
+        <button class="header__toggle-btn | d-inline-flex justify-content-center align-items-center d-xl-none">
+          <img src="img/toggle-icon.svg" alt="toggle icon" class="header__toggle-btn-ic" height="20" width="20">
+        </button>
+      </div>
+      <div class="header__nav-wrapper">
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a href="#homeSection" class="header__nav-link">Home</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#workSection" class="header__nav-link">Work</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#aboutSection" class="header__nav-link">About</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#skillsSection" class="header__nav-link">Skillls</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#serviceSection" class="header__nav-link">Service</a>
+            </li>
+            <li class="header__nav-item | header__nav-item--contact">
+              <!-- contact button -->
+              <a href="#" class="my-btn my-btn--primary">
+                <span class="my-btn__txt">Contact</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+       
+      </div>
+    </div>
+    </div>
+  </header>
+
+  <!-- main content -->
+  <main class="main">
+    <section class="section hero" id="homeSection">
+      <div class="px-5 mx-lg-3">
+        <div class="row | g-5">
+          <div class="col-md-4 | text-center">
+            <div class="profile | d-xl-none d-inline-block">
+              <div class="profile__img-box">
+                <img src="img/vishal-vadher.png" alt="Vishal Vadher" class="profile__img | object-fit-cover" height="250" width="250">
+                <ul class="profile__social-list">
+                  <li>
+                    <a href="#" class="profile__social-link" aria-label="LinkedIn Social Link">
+                      <img src="img/linkedin-icon.svg" alt="LinkedIn" class="profile__social-icon | object-fit-contain" height="24" width="24">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="profile__social-link" aria-label="Github Social Link">
+                      <img src="img/github-icon.svg" alt="Github" class="profile__social-icon | object-fit-contain" height="24" width="24">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="profile__social-link" aria-label="Skype Social Link">
+                      <img src="img/skype-icon.svg" alt="Skype" class="profile__social-icon | object-fit-contain" height="24" width="24">
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8 col-xl-12">
+            <div class="hero__content | text-md-start text-center">
+              <h1 class="hero__heading">I’m Vishal<br> <span class="text-primary-400">Web Designer</span> &<br> Webflow Developer</h1>
+              <p class="mt-3">Web Designer focused on creating responsive websites using<br class="d-none d-lg-block"> HTML, CSS, JavaScript, and Webflow.</p>
+              <a href="#" class="my-btn my-btn--outline-white ? mt-5">
+                <span class="my-btn__txt">Download Resume</span>
+                <img src="img/download-icon.svg" alt="icon" class="my-btn__icon" height="24" width="24">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="row | g-md-5 g-4 mt-5">
+          <div class="col-md-4">
+            <div class="hero__num-nox">
+              <div class="hero__num">50+</div>
+              <h4 class="hero__num-heading">PROJECTS</h4>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="hero__num-nox">
+              <div class="hero__num">15+</div>
+              <h4 class="hero__num-heading">HAPPY CLIENTS</h4>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="hero__num-nox">
+              <div class="hero__num">4+</div>
+              <h4 class="hero__num-heading">YEAR EXPERINCE</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="workSection">
+      <div class="container">
+        
+      </div>
+    </section>
+    <section class="section" id="aboutSection">
+      <div class="container">
+        About Section
+      </div>
+    </section>
+    <section class="section" id="skillsSection">
+      <div class="container">
+        Skills Section
+      </div>
+    </section>
+    <section class="section" id="serviceSection">
+      <div class="container">
+        Service Section
+      </div>
+    </section>
+  </main>
+
+  <!-- custom js -->
+  <script src="js/header.js"></script>
+  <!-- bootstrap js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

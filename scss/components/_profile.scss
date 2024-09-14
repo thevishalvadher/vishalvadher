@@ -1,0 +1,99 @@
+.profile{
+    &__img-box{
+        position: relative;
+        border-radius: var(--radius-400);
+        display: inline-block;
+        &::after{
+            content: '';
+            display: inline-block;
+            height: 100%;
+            width: 100%;
+            background:linear-gradient(to bottom, rgba(255,0,0,0), rgba(0,0,0,0.8));
+            position: absolute;
+            inset: 0;
+            z-index: 1;
+        }
+    }
+    &__img{
+        border-radius: var(--radius-400);
+    }
+    &__name{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 2;
+        bottom: 0.5rem;
+        width: 90%;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 2rem;
+        font-weight: 500;
+        letter-spacing: 1px;
+    }
+    &__info{
+        margin-top: 2rem;
+        @include box-border;
+        padding: 1.4rem;
+        display: grid;
+        gap: 1.4rem;
+    }
+    &__info-heading{
+        opacity: 0.7;
+        font-size: 1.4rem;
+    }
+    &__info-desc{
+        font-size: 1.6rem;
+    }
+    &__social-list{
+        padding-top: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.4rem;
+    }
+    &__social-link{
+        height: 4.2rem;
+        aspect-ratio: 1;
+        @include flex;
+        @include box-border;
+    }
+}
+@media (min-width:1200px){
+    .profile{
+        display: flex;
+        flex-direction: column;
+        background-color: var(--clr-neutral-700);
+        border-radius: var(--radius-400);
+        padding: 2.4rem;
+        align-self: flex-start;
+        position: fixed;
+        top: 3rem;
+        left: var(--aside-offset);
+        width: var(--aside-width);
+        &__img{
+            width: 100%;
+            aspect-ratio: 1;
+        }
+        &__social-list{
+            margin-top: auto;
+        }
+        &__img-box{
+            overflow: hidden;
+        }
+    }
+}
+@media(max-width:1199.98px){
+    .profile{
+        &__social-list{
+            position: absolute;
+            width: 100%;
+            bottom: -2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 9;
+        }
+        &__social-link{
+            border: 1px solid rgba(255,255,255,0.04);
+        }
+    }
+}

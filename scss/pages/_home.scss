@@ -1,0 +1,36 @@
+.hero{
+
+    padding: 4rem 0;
+    &__heading{
+        font-size: 3.8rem;
+        font-weight: 700;
+    }
+    &__num-nox{
+        padding: 2.5rem;
+        border-radius: var(--radius-400);
+        @include box-border;
+        text-align: center;
+    }
+    &__num{
+        font-size: 3.2rem;
+        line-height: 1.2;
+        font-weight: 600;
+    }
+    &__num-heading{
+        font-size: 1.6rem;
+        text-transform: uppercase;
+        opacity: 0.7;
+        margin-top: 0.4rem;
+        letter-spacing: 1px;
+    }
+}
+@media(min-width:1200px){
+    .hero{
+        &__heading{
+            font-size: 5.2rem;
+        }
+        &__num{
+            font-size: 4.2rem;
+        }
+    }
+}

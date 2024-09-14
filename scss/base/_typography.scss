@@ -1,0 +1,81 @@
+@font-face {
+    font-family: 'RNS Sanz';
+    src: url('../fonts/RNSSanz-Light.woff2') format('woff2'),
+        url('../fonts/RNSSanz-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'RNS Sanz';
+    src: url('../fonts/RNSSanz-SemiBold.woff2') format('woff2'),
+        url('../fonts/RNSSanz-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'RNS Sanz';
+    src: url('../fonts/RNSSanz-ExtraBold.woff2') format('woff2'),
+        url('../fonts/RNSSanz-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'RNS Sanz';
+    src: url('../fonts/RNSSanz-Black.woff2') format('woff2'),
+        url('../fonts/RNSSanz-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'RNS Sanz';
+    src: url('../fonts/RNSSanz-Medium.woff2') format('woff2'),
+        url('../fonts/RNSSanz-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'RNS Sanz';
+    src: url('../fonts/RNSSanz-Normal.woff2') format('woff2'),
+        url('../fonts/RNSSanz-Normal.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'RNS Sanz';
+    src: url('../fonts/RNSSanz-Bold.woff2') format('woff2'),
+        url('../fonts/RNSSanz-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+body{
+    font-size: 1.6rem;
+    line-height: 1.6;
+    font-family: var(--ff-primay);
+    font-weight: 400;
+    background-color: var(--clr-neutral-800);
+    color: var(--clr-neutral-100);
+}
+h1,h2,h3,h4,h5,h6{
+    line-height: 1.2;
+}
+
+@media(min-width:1200px){
+    body{
+        font-size: 2rem;
+    }
+}
