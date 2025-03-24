@@ -1,0 +1,13 @@
+body{
+    font-size: 1.6rem;
+    line-height: 1.6;
+    background-color: var(--clr-bg);
+    font-family: "DM Mono", monospace;
+    font-weight: 400;
+    color: var(--clr-text);
+    transition: all 300ms;
+}
+.main-heading{
+    font-size: 5rem;
+    font-weight: 500;
+}

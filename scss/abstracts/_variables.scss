@@ -1,0 +1,35 @@
+/* =============== VARIABLES ===============  */
+:root{
+    --clr-primary-200: #004c721c;
+    --clr-primary-400: #7A8E99;
+
+    --clr-secondary-400: #B4519E;
+
+    --clr-neutral-0: #ffffff;
+    --clr-neutral-50: #f5f5f5;
+    --clr-neutral-100: #E9E9EA;
+    --clr-neutral-200: #BCBCBE;
+    --clr-neutral-300: #8F8F92;
+    --clr-neutral-400: #79797C;
+    --clr-neutral-500: #5E5E65;
+    --clr-neutral-600: #3B3B41;
+    --clr-neutral-700: #2A2A31;
+    --clr-neutral-800: #24242D;
+    --clr-neutral-900: #272730;
+    --clr-neutral-1000: #1F1F24;
+
+    // light mode variables
+    --clr-bg: var(--clr-neutral-0);
+    --card-bg: var(--clr-neutral-0);
+    --card-border:var(--clr-primary-200);
+    --clr-text: var(--clr-neutral-1000);
+    --clr-txt-500:var(--clr-neutral-500);
+    --switch-bg:
+}
+body.dark-mode {
+    --clr-bg: var(--clr-neutral-1000);
+    --card-bg: var(--clr-neutral-900);
+    --card-border: var(--clr-neutral-600);
+    --clr-text: var(--clr-neutral-50);
+    --clr-txt-500: var(--clr-neutral-100);
+}

@@ -1,0 +1,26 @@
+.mode-switch{
+    label{
+        height: 3.4rem;
+        width: 3.4rem;
+        border-radius: 50%;
+        border: 1px solid var(--card-border);
+        cursor: pointer;
+    }
+}
+.dark-mode{
+    .mode-switch{
+        label{
+            background-color: var(--clr-neutral-700);
+        }
+        #moonIcon{
+            display: none;
+        }
+    }
+}
+body:not(.dark-mode){
+    .mode-switch{
+        #sunIcon{
+            display: none;
+        }
+    }
+}
