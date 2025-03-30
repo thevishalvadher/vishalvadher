@@ -1,0 +1,23 @@
+.skills-logo{
+    &__item{
+        background-color: var(--skill-logo-bg);
+        border: 1px solid var(--card-border);
+        height: 6.2rem;
+        aspect-ratio: 1;
+        border-radius: var(--radius-400);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media(max-width:767.98px){
+    .skills-logo{
+        &__item{
+            height:5.2rem;
+        }
+        img{
+            height: 3.2rem;
+            aspect-ratio: 1;
+        }
+    }
+}

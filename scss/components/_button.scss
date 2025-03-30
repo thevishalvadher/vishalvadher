@@ -24,3 +24,17 @@ body:not(.dark-mode){
         }
     }
 }
+button{
+    background: transparent;
+    border: none;
+}
+.my-btn{
+    font-size: 1.6rem;
+    color: var(--clr-text-500);
+    &::before{
+        content: '[ ';
+    }
+    &::after{
+        content: ' ]';
+    }
+}

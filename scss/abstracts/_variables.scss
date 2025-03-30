@@ -1,7 +1,10 @@
 /* =============== VARIABLES ===============  */
 :root{
-    --clr-primary-200: #004c721c;
-    --clr-primary-400: #7A8E99;
+    --clr-primary-200: #12984120;
+    --clr-primary-300: #A8FF53;
+    --clr-primary-400: #129840;
+
+    --clr-gredient:linear-gradient(270deg, #33A381 0%, #129840 100%);
 
     --clr-secondary-400: #B4519E;
 
@@ -19,17 +22,24 @@
     --clr-neutral-1000: #1F1F24;
 
     // light mode variables
+    --clr-primary:var(--clr-primary-400);
     --clr-bg: var(--clr-neutral-0);
     --card-bg: var(--clr-neutral-0);
+    --skill-logo-bg: var(--clr-neutral-50);
     --card-border:var(--clr-primary-200);
     --clr-text: var(--clr-neutral-1000);
-    --clr-txt-500:var(--clr-neutral-500);
-    --switch-bg:
+    --clr-text-500:var(--clr-neutral-500);
+    
+    // border radius    
+    --radius-400:0.8rem;
 }
 body.dark-mode {
     --clr-bg: var(--clr-neutral-1000);
     --card-bg: var(--clr-neutral-900);
+    --skill-logo-bg:var(--clr-neutral-800);
     --card-border: var(--clr-neutral-600);
     --clr-text: var(--clr-neutral-50);
-    --clr-txt-500: var(--clr-neutral-100);
+    --clr-text-500: var(--clr-neutral-100);
+    --clr-primary:var(--clr-primary-300);
+    --clr-gredient:linear-gradient(270deg, #659932 0%, #A8FF53 100%);
 }

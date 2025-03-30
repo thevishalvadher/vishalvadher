@@ -16,23 +16,23 @@
 </head>
 
 <body>
-    <!-- Header -->
+    <!-- header -->
     <header class="header | mt-4">
         <div class="container">
-            <div class="card-box | px-5 py-4 rounded position-relative">
-                <nav class="header__nav | d-flex align-items-center justify-content-between">
+            <div class="card-box | px-md-5 p-4  rounded position-relative">
+                <nav class="header__nav | d-flex align-items-center justify-content-between" aria-label="main navigation">
                     <a href="#" class="header__logo-link | d-flex align-items-center gap-3 fw-medium">
                         <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_4554_3239)">
                                 <path
                                     d="M35.7761 17.4597L26.5883 8.27189C26.3026 7.98619 25.7971 7.98619 25.5114 8.27189L23.5195 10.2638C23.222 10.5613 23.222 11.0436 23.5195 11.3411L30.1771 17.998L23.5199 24.656C23.2224 24.9535 23.2224 25.4357 23.5199 25.7333L25.5118 27.7252C25.6547 27.868 25.8486 27.9488 26.0505 27.9488C26.252 27.9488 26.4463 27.868 26.5891 27.7252L35.7761 18.5377C36.0737 18.2399 36.0737 17.7572 35.7761 17.4597Z"
-                                    fill="currentColor" />
+                                    fill="#62A92B" />
                                 <path
-                                    d="M12.4784 24.6563L5.82192 17.9991L12.4795 11.3422C12.6224 11.1994 12.7028 11.0059 12.7028 10.8036C12.7028 10.6017 12.6228 10.4078 12.4795 10.2649L10.4876 8.27303C10.3448 8.13018 10.1509 8.0498 9.94898 8.0498C9.74709 8.0498 9.55319 8.13018 9.41034 8.27303L0.222157 17.4601C-0.0753544 17.7576 -0.0753544 18.2398 0.222157 18.5377L9.40996 27.7252C9.55281 27.868 9.74671 27.9488 9.9486 27.9488C10.1505 27.9488 10.3444 27.868 10.4872 27.7252L12.4792 25.7332C12.7767 25.4361 12.7767 24.9539 12.4784 24.6563Z"
-                                    fill="currentColor" />
+                                    d="M12.4784 24.6563L5.82192 17.9991L12.4795 11.3422C12.6224 11.1994 12.7028 11.0059 12.7028 10.8036C12.7028 10.6017 12.6228 10.4078 12.4795 10.2649L10.4876 8.27303C10.3448 8.13018 10.1509 8.0498 9.94898 8.0498C9.74709 8.0498 9.55319 8.13018 9.41034 8.27303L0.222157 17.4601C-0.0753544 17.7576 -0.0753544 18.2399 0.222157 18.5377L9.40996 27.7252C9.55281 27.868 9.74671 27.9488 9.9486 27.9488C10.1505 27.9488 10.3444 27.868 10.4872 27.7252L12.4792 25.7332C12.7767 25.4361 12.7767 24.9539 12.4784 24.6563Z"
+                                    fill="#62A92B" />
                                 <path
                                     d="M23.2241 5.18119C23.1273 5.00367 22.9643 4.87187 22.7708 4.81473L21.156 4.33817C20.7529 4.21856 20.3286 4.44979 20.2097 4.8532L12.7133 30.2399C12.6561 30.4338 12.6782 30.6422 12.7746 30.8193C12.871 30.9972 13.0344 31.1287 13.2279 31.1862L14.8427 31.6627C14.9147 31.6841 14.9875 31.6943 15.0587 31.6943C15.3874 31.6943 15.691 31.4795 15.789 31.1477L23.2854 5.76059C23.3425 5.56669 23.3208 5.35832 23.2241 5.18119Z"
-                                    fill="currentColor" />
+                                    fill="#62A92B" />
                             </g>
                             <defs>
                                 <clipPath id="clip0_4554_3239">
@@ -52,7 +52,7 @@
                         </ul>
                         <ul class="header__social-list | d-flex align-items-center gap-4">
                             <li>
-                                <a href="#" class="header__social-link">
+                                <a href="#" class="header__social-link" aria-label="twitter profile link">
                                     <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -62,7 +62,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="header__social-link">
+                                <a href="#" class="header__social-link" aria-label="linkedin profile link">
                                     <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -72,7 +72,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="header__social-link">
+                                <a href="#" class="header__social-link" aria-label="github profile link">
                                     <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -86,16 +86,25 @@
                     <div class="d-flex align-items-center gap-4 ms-5">
                         <div class="mode-switch | d-flex">
                             <input type="checkbox" id="modeChange" class="visually-hidden">
-                            <label for="modeChange" aria-label="Dark light mode switch" class="d-flex align-items-center justify-content-center">
-                                <svg id="moonIcon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M12 21.9967C6.47715 21.9967 2 17.5196 2 11.9967C2 6.47386 6.47715 1.9967 12 1.9967C17.5228 1.9967 22 6.47386 22 11.9967C22 17.5196 17.5228 21.9967 12 21.9967ZM5.32889 16.422C6.76378 18.5675 9.20868 19.9803 11.9836 19.9803C16.4018 19.9803 19.9836 16.3985 19.9836 11.9803C19.9836 9.2053 18.5707 6.76034 16.4251 5.32547C17.2705 8.35324 16.5025 11.7369 14.1213 14.1181C11.7401 16.4993 8.3566 17.2672 5.32889 16.422Z" fill="currentColor"/>
+                            <label for="modeChange" aria-label="Dark light mode switch"
+                                class="d-flex align-items-center justify-content-center">
+                                <svg id="moonIcon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12 21.9967C6.47715 21.9967 2 17.5196 2 11.9967C2 6.47386 6.47715 1.9967 12 1.9967C17.5228 1.9967 22 6.47386 22 11.9967C22 17.5196 17.5228 21.9967 12 21.9967ZM5.32889 16.422C6.76378 18.5675 9.20868 19.9803 11.9836 19.9803C16.4018 19.9803 19.9836 16.3985 19.9836 11.9803C19.9836 9.2053 18.5707 6.76034 16.4251 5.32547C17.2705 8.35324 16.5025 11.7369 14.1213 14.1181C11.7401 16.4993 8.3566 17.2672 5.32889 16.422Z"
+                                        fill="currentColor" />
                                 </svg>
-                                <svg id="sunIcon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M12 17.4545C8.98754 17.4545 6.54545 15.0125 6.54545 12C6.54545 8.98754 8.98754 6.54545 12 6.54545C15.0125 6.54545 17.4545 8.98754 17.4545 12C17.4545 15.0125 15.0125 17.4545 12 17.4545ZM11.0909 2.90909C11.0909 2.40701 11.4979 2 12 2V2C12.5021 2 12.9091 2.40701 12.9091 2.90909V3.81818C12.9091 4.32026 12.5021 4.72727 12 4.72727V4.72727C11.4979 4.72727 11.0909 4.32026 11.0909 3.81818V2.90909ZM11.0909 20.1818C11.0909 19.6797 11.4979 19.2727 12 19.2727V19.2727C12.5021 19.2727 12.9091 19.6797 12.9091 20.1818V21.0909C12.9091 21.593 12.5021 22 12 22V22C11.4979 22 11.0909 21.593 11.0909 21.0909V20.1818ZM4.92893 6.21458C4.57391 5.85956 4.57391 5.28395 4.92893 4.92893V4.92893C5.28395 4.57391 5.85956 4.57391 6.21458 4.92893L6.8574 5.57176C7.21243 5.92678 7.21243 6.50238 6.8574 6.8574V6.8574C6.50238 7.21243 5.92678 7.21243 5.57176 6.8574L4.92893 6.21458ZM17.1426 18.4283C16.7876 18.0733 16.7875 17.4976 17.1426 17.1426V17.1426C17.4976 16.7875 18.0733 16.7876 18.4283 17.1426L19.0711 17.7854C19.4261 18.1405 19.4261 18.7161 19.0711 19.0711V19.0711C18.7161 19.4261 18.1405 19.4261 17.7854 19.0711L17.1426 18.4283ZM17.7854 4.92891C18.1405 4.5739 18.7161 4.57391 19.0711 4.92893V4.92893C19.4261 5.28395 19.4261 5.85956 19.0711 6.21458L18.4283 6.85741C18.0733 7.21243 17.4976 7.21244 17.1426 6.85743V6.85743C16.7876 6.5024 16.7876 5.92676 17.1426 5.57173L17.7854 4.92891ZM5.57173 17.1426C5.92676 16.7876 6.5024 16.7876 6.85743 17.1426V17.1426C7.21244 17.4976 7.21243 18.0733 6.85741 18.4283L6.21458 19.0711C5.85956 19.4261 5.28395 19.4261 4.92893 19.0711V19.0711C4.57391 18.7161 4.5739 18.1405 4.92891 17.7854L5.57173 17.1426ZM21.0909 11.0909C21.593 11.0909 22 11.4979 22 12V12C22 12.5021 21.593 12.9091 21.0909 12.9091H20.1818C19.6797 12.9091 19.2727 12.5021 19.2727 12V12C19.2727 11.4979 19.6797 11.0909 20.1818 11.0909H21.0909ZM3.81818 11.0909C4.32026 11.0909 4.72727 11.4979 4.72727 12V12C4.72727 12.5021 4.32026 12.9091 3.81818 12.9091H2.90909C2.40701 12.9091 2 12.5021 2 12V12C2 11.4979 2.40701 11.0909 2.90909 11.0909H3.81818Z" fill="currentColor"/>
+                                <svg id="sunIcon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12 17.4545C8.98754 17.4545 6.54545 15.0125 6.54545 12C6.54545 8.98754 8.98754 6.54545 12 6.54545C15.0125 6.54545 17.4545 8.98754 17.4545 12C17.4545 15.0125 15.0125 17.4545 12 17.4545ZM11.0909 2.90909C11.0909 2.40701 11.4979 2 12 2V2C12.5021 2 12.9091 2.40701 12.9091 2.90909V3.81818C12.9091 4.32026 12.5021 4.72727 12 4.72727V4.72727C11.4979 4.72727 11.0909 4.32026 11.0909 3.81818V2.90909ZM11.0909 20.1818C11.0909 19.6797 11.4979 19.2727 12 19.2727V19.2727C12.5021 19.2727 12.9091 19.6797 12.9091 20.1818V21.0909C12.9091 21.593 12.5021 22 12 22V22C11.4979 22 11.0909 21.593 11.0909 21.0909V20.1818ZM4.92893 6.21458C4.57391 5.85956 4.57391 5.28395 4.92893 4.92893V4.92893C5.28395 4.57391 5.85956 4.57391 6.21458 4.92893L6.8574 5.57176C7.21243 5.92678 7.21243 6.50238 6.8574 6.8574V6.8574C6.50238 7.21243 5.92678 7.21243 5.57176 6.8574L4.92893 6.21458ZM17.1426 18.4283C16.7876 18.0733 16.7875 17.4976 17.1426 17.1426V17.1426C17.4976 16.7875 18.0733 16.7876 18.4283 17.1426L19.0711 17.7854C19.4261 18.1405 19.4261 18.7161 19.0711 19.0711V19.0711C18.7161 19.4261 18.1405 19.4261 17.7854 19.0711L17.1426 18.4283ZM17.7854 4.92891C18.1405 4.5739 18.7161 4.57391 19.0711 4.92893V4.92893C19.4261 5.28395 19.4261 5.85956 19.0711 6.21458L18.4283 6.85741C18.0733 7.21243 17.4976 7.21244 17.1426 6.85743V6.85743C16.7876 6.5024 16.7876 5.92676 17.1426 5.57173L17.7854 4.92891ZM5.57173 17.1426C5.92676 16.7876 6.5024 16.7876 6.85743 17.1426V17.1426C7.21244 17.4976 7.21243 18.0733 6.85741 18.4283L6.21458 19.0711C5.85956 19.4261 5.28395 19.4261 4.92893 19.0711V19.0711C4.57391 18.7161 4.5739 18.1405 4.92891 17.7854L5.57173 17.1426ZM21.0909 11.0909C21.593 11.0909 22 11.4979 22 12V12C22 12.5021 21.593 12.9091 21.0909 12.9091H20.1818C19.6797 12.9091 19.2727 12.5021 19.2727 12V12C19.2727 11.4979 19.6797 11.0909 20.1818 11.0909H21.0909ZM3.81818 11.0909C4.32026 11.0909 4.72727 11.4979 4.72727 12V12C4.72727 12.5021 4.32026 12.9091 3.81818 12.9091H2.90909C2.40701 12.9091 2 12.5021 2 12V12C2 11.4979 2.40701 11.0909 2.90909 11.0909H3.81818Z"
+                                        fill="currentColor" />
                                 </svg>
                             </label>
                         </div>
-                        <button class="header__toggle-btn | d-lg-none d-flex justify-content-center align-items-center flex-column" aria-label="header menu open button">
+                        <button
+                            class="header__toggle-btn | d-lg-none d-flex justify-content-center align-items-center flex-column"
+                            aria-label="header menu open button">
                             <span class="header__toggle-line header__toggle-line--1"></span>
                             <span class="header__toggle-line header__toggle-line--2"></span>
                         </button>
@@ -104,22 +113,56 @@
             </div>
         </div>
     </header>
-    <!-- Main -->
+    <!-- main -->
     <main>
+        <!-- hero section -->
         <section class="section hero | mt-5">
             <div class="container">
-                <div class="card-box | rounded p-5">
+                <div class="card-box | rounded px-md-5 px-4 py-5">
                     <div class="row | align-items-center">
                         <div class="col-lg-4">
                             <div class="hero__img-box">
                                 <img src="img/hero-img.png" alt="hero image">
                             </div>
                         </div>
-                        <div class="col-lg-7 ms-auto">
-                            <span class="mb-3 d-block">Hey, I&apos;m Vishal</span>
-                            <h1 class="main-heading">Senior {UI Developer}<br> & Webflow Expert</h1>
+                        <div class="col-lg-7 ms-auto mt-5 mt-lg-0">
+                            <span class="mb-3 d-block"><span class="text-secondary-400">&lt;span&gt;</span>Hey, I&apos;m
+                                Vishal<span class="text-secondary-400">&lt;/span&gt;</span></span>
+                            <h1 class="main-heading | mb-4">Senior <span class="text-gredient">{UI Developer}</span><br class="d-none d-lg-block">
+                                & Webflow Expert</h1>
+                            <p><span class="text-secondary-400 d-none">&lt;p&gt;</span>With expertise in modern web technologies such as <span class="text-secondary-400">HTML5</span>, <span class="text-secondary-400">CSS3</span>, <span class="text-secondary-400">JavaScript</span>, and <span class="text-secondary-400">Webflow</span>, I craft user-friendly, visually engaging, and high&ndash;performance web interfaces. Let's build exceptional digital experiences together.<span class="text-secondary-400 d-none">&lt;/p&gt;</span></p>
+                                <ul class="skills-logo | d-flex align-items-center gap-3 gap-lg-4 my-5 flex-wrap">
+                                    <li class="skills-logo__item"><img src="img/html-logo.svg" alt="html logo"
+                                            height="40" width="40" class="object-fit-contain"></li>
+                                    <li class="skills-logo__item"><img src="img/css-logo.svg" alt="css logo" height="40"
+                                            width="40" class="object-fit-contain"></li>
+                                    <li class="skills-logo__item"><img src="img/javascript-logo.svg"
+                                            alt="javascript logo" height="40" width="40" class="object-fit-contain">
+                                    </li>
+                                    <li class="skills-logo__item"><img src="img/bootstrap-logo.svg" alt="bootstrap logo"
+                                            height="40" width="40" class="object-fit-contain"></li>
+                                    <li class="skills-logo__item"><img src="img/webflow-logo.svg" alt="webflow logo"
+                                            height="40" width="40" class="object-fit-contain"></li>
+                                    <li class="align-self-end">...and more</li>
+                                </ul>
+                            <div class="d-flex align-items-center gap-3">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M3 19H21V21H3V19ZM13 13.1716L19.0711 7.1005L20.4853 8.51472L12 17L3.51472 8.51472L4.92893 7.1005L11 13.1716V2H13V13.1716Z"
+                                        fill="#62A92B" />
+                                </svg>
+                                <a href="docs/Vishal_Vadher_WebDesigner_Resume.pdf " class="my-btn my-btn--primary" role="button" download="">Download Cv</a>
+                            </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
+        <section class="section | mt-5">
+            <div class="container">
+                <div class="card-box | rounded px-md-5 px-4 py-5">
+
                 </div>
             </div>
         </section>

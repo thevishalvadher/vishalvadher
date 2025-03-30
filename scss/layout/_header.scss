@@ -4,12 +4,7 @@
         color: var(--clr-text);
     }
     &__nav-link{
-        color: var(--clr-txt-500);
-    }
-    &__logo-link{
-        svg{
-            color: var(--clr-primary-400);
-        }
+        color: var(--clr-text-500);
     }
 }
 @media (max-width:991.98px){

@@ -4,10 +4,18 @@ body{
     background-color: var(--clr-bg);
     font-family: "DM Mono", monospace;
     font-weight: 400;
-    color: var(--clr-text);
+    color: var(--clr-text-500);
     transition: all 300ms;
+    text-wrap: balance;
 }
 .main-heading{
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: 500;
+    color: var(--clr-text);
+}
+
+@media(min-width:768px){
+    .main-heading{
+        font-size: 5rem;
+    }
 }

@@ -1,7 +1,9 @@
 /* =============== VARIABLES ===============  */
 :root {
-  --clr-primary-200: #004c721c;
-  --clr-primary-400: #7A8E99;
+  --clr-primary-200: #12984120;
+  --clr-primary-300: #A8FF53;
+  --clr-primary-400: #129840;
+  --clr-gredient:linear-gradient(270deg, #33A381 0%, #129840 100%);
   --clr-secondary-400: #B4519E;
   --clr-neutral-0: #ffffff;
   --clr-neutral-50: #f5f5f5;
@@ -15,20 +17,25 @@
   --clr-neutral-800: #24242D;
   --clr-neutral-900: #272730;
   --clr-neutral-1000: #1F1F24;
+  --clr-primary:var(--clr-primary-400);
   --clr-bg: var(--clr-neutral-0);
   --card-bg: var(--clr-neutral-0);
+  --skill-logo-bg: var(--clr-neutral-50);
   --card-border:var(--clr-primary-200);
   --clr-text: var(--clr-neutral-1000);
-  --clr-txt-500:var(--clr-neutral-500);
-  --switch-bg: ;
+  --clr-text-500:var(--clr-neutral-500);
+  --radius-400:0.8rem;
 }
 
 body.dark-mode {
   --clr-bg: var(--clr-neutral-1000);
   --card-bg: var(--clr-neutral-900);
+  --skill-logo-bg:var(--clr-neutral-800);
   --card-border: var(--clr-neutral-600);
   --clr-text: var(--clr-neutral-50);
-  --clr-txt-500: var(--clr-neutral-100);
+  --clr-text-500: var(--clr-neutral-100);
+  --clr-primary:var(--clr-primary-300);
+  --clr-gredient:linear-gradient(270deg, #659932 0%, #A8FF53 100%);
 }
 
 /* box sizing rules */
@@ -123,13 +130,39 @@ body {
   background-color: var(--clr-bg);
   font-family: "DM Mono", monospace;
   font-weight: 400;
-  color: var(--clr-text);
+  color: var(--clr-text-500);
   transition: all 300ms;
+  text-wrap: balance;
 }
 
 .main-heading {
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: 500;
+  color: var(--clr-text);
+}
+
+@media (min-width: 768px) {
+  .main-heading {
+    font-size: 5rem;
+  }
+}
+.text-secondary-400 {
+  color: var(--clr-secondary-400);
+}
+
+.text-primary-400 {
+  color: var(--clr-primary);
+}
+
+.text-gredient {
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+  background-image: var(--clr-gredient);
+}
+
+.rounded {
+  border-radius: var(--radius-400) !important;
 }
 
 .mode-switch label {
@@ -151,6 +184,42 @@ body:not(.dark-mode) .mode-switch #sunIcon {
   display: none;
 }
 
+button {
+  background: transparent;
+  border: none;
+}
+
+.my-btn {
+  font-size: 1.6rem;
+  color: var(--clr-text-500);
+}
+.my-btn::before {
+  content: "[ ";
+}
+.my-btn::after {
+  content: " ]";
+}
+
+.skills-logo__item {
+  background-color: var(--skill-logo-bg);
+  border: 1px solid var(--card-border);
+  height: 6.2rem;
+  aspect-ratio: 1;
+  border-radius: var(--radius-400);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 767.98px) {
+  .skills-logo__item {
+    height: 5.2rem;
+  }
+  .skills-logo img {
+    height: 3.2rem;
+    aspect-ratio: 1;
+  }
+}
 .header {
   isolation: isolate;
 }
@@ -158,10 +227,7 @@ body:not(.dark-mode) .mode-switch #sunIcon {
   color: var(--clr-text);
 }
 .header__nav-link {
-  color: var(--clr-txt-500);
-}
-.header__logo-link svg {
-  color: var(--clr-primary-400);
+  color: var(--clr-text-500);
 }
 
 @media (max-width: 991.98px) {

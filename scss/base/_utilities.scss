@@ -1,0 +1,14 @@
+.text-secondary-400{
+    color: var(--clr-secondary-400);
+}
+.text-primary-400{
+    color: var(--clr-primary);
+}
+.text-gredient{
+    color: transparent;
+    background-clip: text;
+    background-image: var(--clr-gredient);
+}
+.rounded{
+    border-radius: var(--radius-400) !important;
+}
