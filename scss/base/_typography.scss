@@ -2,20 +2,42 @@ body{
     font-size: 1.6rem;
     line-height: 1.6;
     background-color: var(--clr-bg);
-    font-family: "DM Mono", monospace;
+    font-family: "Poppins", sans-serif;
     font-weight: 400;
     color: var(--clr-text-500);
     transition: all 300ms;
-    text-wrap: balance;
+    // text-wrap: balance;
 }
 .main-heading{
+    font-family: "DM Mono", monospace;
     font-size: 4rem;
     font-weight: 500;
     color: var(--clr-text);
 }
-
+.secondary-heading{
+    font-family: "DM Mono", monospace;
+    font-size: 2.8rem;
+    font-weight: 500;
+    color: var(--clr-text);
+}
+.sub-heading{
+    font-family: "DM Mono", monospace;
+    font-size: 1.8rem;
+    color: var(--clr-text);
+    line-height: 1.2;
+    font-weight: 500;
+}
+.clr-txt{
+    color: var(--clr-text);
+}
 @media(min-width:768px){
     .main-heading{
         font-size: 5rem;
+    }
+    .secondary-heading{
+        font-size: 3.5rem;
+    }
+    .sub-heading{
+        font-size: 2rem;
     }
 }

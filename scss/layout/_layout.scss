@@ -2,4 +2,20 @@
 .card-box{
     background-color: var(--card-bg);
     border: 1px solid var(--card-border);
+    &--section{
+        padding: 4rem 1.6rem;
+        border-radius: var(--radius-400);
+    }
+}
+@media(min-width:768px){
+    .card-box{
+        &--section{
+            padding: 6rem 3rem;
+        }
+    }
+}
+@media(max-width:767.98px){
+    .container{
+        --bs-gutter-x: 2rem;
+    }
 }

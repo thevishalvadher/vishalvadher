@@ -18,12 +18,12 @@
     --clr-neutral-600: #3B3B41;
     --clr-neutral-700: #2A2A31;
     --clr-neutral-800: #24242D;
-    --clr-neutral-900: #272730;
-    --clr-neutral-1000: #1F1F24;
+    --clr-neutral-900: #1b1b22;
+    --clr-neutral-1000: #151518;
 
     // light mode variables
     --clr-primary:var(--clr-primary-400);
-    --clr-bg: var(--clr-neutral-0);
+    --clr-bg: var(--clr-neutral-50);
     --card-bg: var(--clr-neutral-0);
     --skill-logo-bg: var(--clr-neutral-50);
     --card-border:var(--clr-primary-200);
@@ -32,14 +32,19 @@
     
     // border radius    
     --radius-400:0.8rem;
+
+    .is-dark{display: none;}
 }
 body.dark-mode {
     --clr-bg: var(--clr-neutral-1000);
     --card-bg: var(--clr-neutral-900);
     --skill-logo-bg:var(--clr-neutral-800);
-    --card-border: var(--clr-neutral-600);
+    --card-border: var(--clr-neutral-700);
     --clr-text: var(--clr-neutral-50);
-    --clr-text-500: var(--clr-neutral-100);
+    --clr-text-500: var(--clr-neutral-200);
     --clr-primary:var(--clr-primary-300);
     --clr-gredient:linear-gradient(270deg, #659932 0%, #A8FF53 100%);
+
+    .is-light{display: none;}
+    .is-dark{display: inline-block;}
 }

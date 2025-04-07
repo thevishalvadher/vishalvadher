@@ -1,0 +1,52 @@
+.hero{
+    p{
+        text-wrap: balance;
+    }
+}
+.stats{
+    &__no{
+        font-weight: 500;
+        font-size: 4rem;
+        line-height: 1.2;
+    }
+}
+.exp{
+    &__tab{
+        .nav-link{
+            background-color: var(--card-bg);
+            border: 1px solid var(--card-border);
+            color: var(--clr-text-500);
+            padding: 1.5rem ;
+            &.active{
+                background-color:var(--card-border);
+                color: var(--clr-text-500);
+            }
+        }
+    }
+    .dot-list {
+        li{
+            max-width: 75rem;
+        }
+    }
+    &__tags{
+        li{
+            padding: 0.6rem 1.2rem;
+            border: 1px solid var(--card-border);
+            font-size: 1.4rem;
+        }
+    }
+}
+@media(min-width:768px){
+    .stats{
+        &__no{
+            font-size: 5rem;
+        }
+    }
+    .exp{
+        &__tab{
+            .nav-link{
+                padding: 2rem 2.4rem;
+            }
+        }
+    }
+}
