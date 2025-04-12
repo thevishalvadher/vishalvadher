@@ -1,7 +1,7 @@
 /* =============== VARIABLES ===============  */
 :root{
     --clr-primary-200: #12984120;
-    --clr-primary-300: #A8FF53;
+    --clr-primary-300: #62A92B;
     --clr-primary-400: #129840;
 
     --clr-gredient:linear-gradient(270deg, #33A381 0%, #129840 100%);
@@ -15,7 +15,7 @@
     --clr-neutral-300: #8F8F92;
     --clr-neutral-400: #79797C;
     --clr-neutral-500: #5E5E65;
-    --clr-neutral-600: #3B3B41;
+    --clr-neutral-600: #010101;
     --clr-neutral-700: #2A2A31;
     --clr-neutral-800: #24242D;
     --clr-neutral-900: #1b1b22;
@@ -27,13 +27,21 @@
     --card-bg: var(--clr-neutral-0);
     --skill-logo-bg: var(--clr-neutral-50);
     --card-border:var(--clr-primary-200);
-    --clr-text: var(--clr-neutral-1000);
+    --clr-text: var(--clr-neutral-800);
     --clr-text-500:var(--clr-neutral-500);
     
     // border radius    
+    --radius-300:0.4rem;
     --radius-400:0.8rem;
 
     .is-dark{display: none;}
+
+    --ff-primary: "DM Mono", monospace;
+    --ff-secondary: "DM Sans", sans-serif;
+
+    // img filter
+    --filter-primary:brightness(0) saturate(100%) invert(61%) sepia(12%) saturate(2683%) hue-rotate(51deg) brightness(94%) contrast(78%);
+    --filter-white:brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(1%) hue-rotate(101deg) brightness(112%) contrast(101%);
 }
 body.dark-mode {
     --clr-bg: var(--clr-neutral-1000);
@@ -43,7 +51,7 @@ body.dark-mode {
     --clr-text: var(--clr-neutral-50);
     --clr-text-500: var(--clr-neutral-200);
     --clr-primary:var(--clr-primary-300);
-    --clr-gredient:linear-gradient(270deg, #659932 0%, #A8FF53 100%);
+    --clr-gredient:linear-gradient(270deg, #62A92B 0%, #8ff826 100%);
 
     .is-light{display: none;}
     .is-dark{display: inline-block;}

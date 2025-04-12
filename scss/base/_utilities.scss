@@ -1,6 +1,9 @@
 .text-secondary-400{
     color: var(--clr-secondary-400);
 }
+.text-primary-300{
+    color: var(--clr-primary-300);
+}
 .text-primary-400{
     color: var(--clr-primary);
 }
@@ -14,4 +17,16 @@
 }
 .rounded{
     border-radius: var(--radius-400) !important;
+}
+.rounded-2{
+    border-radius: var(--radius-300) !important;
+}
+.ff-primary{
+    font-family: var(--ff-primary);
+}
+.ff-secondary{
+    font-family: var(--ff-secondary);
+}
+.img-primary{
+    filter:var(--filter-primary);
 }

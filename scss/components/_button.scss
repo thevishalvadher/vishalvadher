@@ -5,6 +5,12 @@
         border-radius: 50%;
         border: 1px solid var(--card-border);
         cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        svg{
+            position: absolute;
+            transition: all 0.4s;
+        }
     }
 }
 .dark-mode{
@@ -13,14 +19,30 @@
             background-color: var(--clr-neutral-700);
         }
         #moonIcon{
-            display: none;
+            left: -10px;
+            bottom: -20px;
+            top: unset;
+            right: unset;
+        }
+        #sunIcon{
+            left: 50%;
+            top: 50%;
+            translate: -50%  -50%;
+            right: unset;
         }
     }
 }
 body:not(.dark-mode){
     .mode-switch{
         #sunIcon{
-            display: none;
+            // display: none;
+            right: -20px;
+            top: -20px;
+        }
+        #moonIcon{
+            left: 50%;
+            top: 50%;
+            translate: -50%  -50%;
         }
     }
 }

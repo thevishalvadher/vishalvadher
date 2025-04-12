@@ -2,6 +2,12 @@
     p{
         text-wrap: balance;
     }
+    &__img{
+        width: 100%;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        border-radius: 2rem 5rem 2rem 5rem;
+    }
 }
 .stats{
     &__no{
@@ -33,6 +39,148 @@
             padding: 0.6rem 1.2rem;
             border: 1px solid var(--card-border);
             font-size: 1.4rem;
+            border-radius: var(--radius-300);
+        }
+    }
+}
+.portfolio{
+    &__title{
+        font-size: 2rem;
+    }
+    &__thumb{
+        border: 1px solid var(--card-border);
+    }
+    &__info-list{
+        font-size: 1.4rem;
+        margin-top: 2rem;
+        li{
+            border-bottom: 1px solid var(--card-border);
+            &:first-child{
+                border-top: 1px solid var(--card-border);
+            }
+            h5{
+                color: var(--clr-text);
+            }
+        }
+    }
+    &__view-link{
+        border-bottom: 1px solid var(--clr-primary);
+        img{
+            transition: all 0.3s;
+        }
+        &:not(:hover){
+            img{
+                rotate: -45deg;
+            }
+        }
+    }
+    &__controls{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        .swiper-button-next,
+        .swiper-button-prev{
+            position: unset;
+            height: 4.2rem;
+            width: 4.2rem;
+            border-radius: 50%;
+            background-color: var(--clr-primary);
+            inset: unset;
+            transform: none;
+            margin: 0;
+            position: relative;
+            &::before{
+                content: '';
+                border: 0;
+                height: 1.6rem;
+                width: 1.6rem;
+                background: url('../img/arrow-right.svg') no-repeat center center / 1.6rem; 
+                filter: var(--filter-white);
+                display: inline-block;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                translate: -50% -50%;
+            }
+        }
+        .swiper-button-prev{
+            &::before{
+                transform: scaleX(-1);
+            }
+        }
+    }
+    .swiper-pagination{
+        line-height:0;
+        bottom: 0;
+    }
+    .swiper-pagination-bullet{
+        background-color: var(--clr-primary);
+    }
+}
+.offer{
+    &__card{
+        transition: all 0.3s;
+        &:hover{
+            box-shadow: 0 0 2rem rgba($color: #1b1b22, $alpha: 0.1);
+            scale: 1.02;
+            img{
+                filter: var(--filter-primary);
+            }
+        }
+    }
+}
+.education{
+    &__timeline-item{
+        padding-left: 1.5rem;
+        position: relative;
+        display: flex;
+        gap: 1.5rem;
+        span{
+            display: block;
+            color: var(--clr-primary);
+            margin-bottom: 0.4rem;
+            font-family: var(--ff-primary);
+            font-size: 1.8rem;
+            line-height: 1.3;
+        }
+        &:not(:last-child){
+            padding-bottom: 3rem;
+           p{
+            &::before{
+                content: '';
+                width: 1px;
+                height: 100%;
+                display: inline-block;
+                background-color: var(--card-border);
+                left: 0;
+                top: 0.5rem;
+                position: absolute;
+            }
+           }
+        }
+        &::before{
+            content: attr(data-duration) ':';
+            flex-shrink: 0;
+            line-height: 1.8;
+            font-size: 1.4rem;
+        }
+        &::after{
+            content: '';
+            height: 0.8rem;
+            width: 0.8rem;
+            background-color: var(--clr-text-500);
+            display: inline-block;
+            border-radius: 50%;
+            position: absolute;
+            left: -0.35rem;
+            top: 0.5rem;
+        }
+    }
+}
+.dark-mode{
+    .education{
+        span{
+            color: var(--clr-neutral-0);
         }
     }
 }
@@ -47,6 +195,11 @@
             .nav-link{
                 padding: 2rem 2.4rem;
             }
+        }
+    }
+    .portfolio{
+        &__title{
+            font-size: 2.4rem;
         }
     }
 }

@@ -2,26 +2,26 @@ body{
     font-size: 1.6rem;
     line-height: 1.6;
     background-color: var(--clr-bg);
-    font-family: "Poppins", sans-serif;
+    font-family: var(--ff-secondary);
     font-weight: 400;
     color: var(--clr-text-500);
     transition: all 300ms;
     // text-wrap: balance;
 }
 .main-heading{
-    font-family: "DM Mono", monospace;
+    font-family: var(--ff-primary);
     font-size: 4rem;
-    font-weight: 500;
+    font-weight:500;
     color: var(--clr-text);
 }
 .secondary-heading{
-    font-family: "DM Mono", monospace;
+    font-family: var(--ff-primary);
     font-size: 2.8rem;
     font-weight: 500;
     color: var(--clr-text);
 }
 .sub-heading{
-    font-family: "DM Mono", monospace;
+    font-family: var(--ff-primary);
     font-size: 1.8rem;
     color: var(--clr-text);
     line-height: 1.2;
