@@ -551,8 +551,8 @@ textarea.form-control {
   margin: 0;
   position: relative;
 }
-.portfolio__controls .swiper-button-next::before,
-.portfolio__controls .swiper-button-prev::before {
+.portfolio__controls .swiper-button-next::after,
+.portfolio__controls .swiper-button-prev::after {
   content: "";
   border: 0;
   height: 1.6rem;
@@ -565,7 +565,7 @@ textarea.form-control {
   top: 50%;
   translate: -50% -50%;
 }
-.portfolio__controls .swiper-button-prev::before {
+.portfolio__controls .swiper-button-prev::after {
   transform: scaleX(-1);
 }
 .portfolio .swiper-pagination {
