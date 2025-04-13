@@ -474,8 +474,14 @@ textarea.form-control {
 .hero p {
   text-wrap: balance;
 }
-.hero__img-box {
+.hero__img-box-main {
   position: relative;
+}
+.hero__img-box {
+  border-radius: 50rem;
+  border: 1px solid var(--card-border);
+  background-color: var(--card-border);
+  overflow: hidden;
 }
 .hero__img-box::after {
   content: "";
@@ -486,14 +492,14 @@ textarea.form-control {
   right: 0rem;
   bottom: 0rem;
   background: url("../img/hero-code.svg") no-repeat center center/contain;
+  z-index: 9;
 }
 .hero__img {
   width: 100%;
   aspect-ratio: 1/1;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 50rem;
-  border: 1px solid var(--card-border);
+  filter: drop-shadow(0 0 2rem rgba(0, 0, 0, 0.4));
 }
 
 .stats__no {

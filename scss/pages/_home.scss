@@ -2,8 +2,14 @@
     p{
         text-wrap: balance;
     }
-    &__img-box{
+    &__img-box-main{
         position: relative;
+    }
+    &__img-box{
+        border-radius:50rem;
+        border: 1px solid var(--card-border);
+        background-color: var(--card-border);
+        overflow: hidden;
         &::after{
             content: '';
             height:4rem;
@@ -13,14 +19,14 @@
             right:0rem;
             bottom: 0rem;
             background: url('../img/hero-code.svg') no-repeat center center / contain;
+            z-index: 9;
         }
     }
     &__img{
         width: 100%;
         aspect-ratio: 1/1;
         object-fit: cover;
-        border-radius:50rem;
-        border: 1px solid var(--card-border);
+        filter: drop-shadow(0 0 2rem rgba(0,0,0,0.4));
     }
 }
 .stats{
