@@ -2,11 +2,25 @@
     p{
         text-wrap: balance;
     }
+    &__img-box{
+        position: relative;
+        &::after{
+            content: '';
+            height:4rem;
+            width:4rem;
+            display: inline-block;
+            position: absolute;
+            right:0rem;
+            bottom: 0rem;
+            background: url('../img/hero-code.svg') no-repeat center center / contain;
+        }
+    }
     &__img{
         width: 100%;
         aspect-ratio: 1/1;
         object-fit: cover;
-        border-radius: 2rem 5rem 2rem 5rem;
+        border-radius:50rem;
+        border: 1px solid var(--card-border);
     }
 }
 .stats{
@@ -234,6 +248,16 @@
     
 }
 @media(min-width:992px){
+    .hero{
+        &__img-box{
+            &::after{
+                height: 8rem; 
+                width: 8rem;
+                right: 2rem;
+                bottom: 2rem;
+            }
+        }
+    }
     .skills{
         &__content{
             border-left: 1px solid var(--card-border);
