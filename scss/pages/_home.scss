@@ -281,3 +281,12 @@
         }
     }
 }
+@media(max-width:991.98px){
+    .offer{
+        &__card{
+            img{
+                filter: var(--filter-primary);
+            }
+        }
+    }
+}

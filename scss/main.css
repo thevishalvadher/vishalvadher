@@ -707,4 +707,9 @@ textarea.form-control {
   .contact #contactForm {
     min-height: 38rem;
   }
+}
+@media (max-width: 991.98px) {
+  .offer__card img {
+    filter: var(--filter-primary);
+  }
 }/*# sourceMappingURL=main.css.map */
