@@ -69,6 +69,7 @@ body.dark-mode .is-dark {
 /* reset font size 1rem to 10px */
 html {
   font-size: 62.5%;
+  scroll-padding-top: 8rem;
 }
 
 body, html {
@@ -189,6 +190,10 @@ body {
   color: var(--clr-secondary-400);
 }
 
+.text-neutral-800 {
+  color: var(--clr-text);
+}
+
 .text-primary-300 {
   color: var(--clr-primary-300);
 }
@@ -226,6 +231,10 @@ body {
 
 .img-primary {
   filter: var(--filter-primary);
+}
+
+.img-white {
+  filter: var(--filter-white);
 }
 
 .mode-switch label {
@@ -273,14 +282,39 @@ button {
   border: none;
 }
 
-.my-btn {
+.btn {
+  font-size: 1.4rem;
+  font-weight: 600;
+  padding: 1.6rem 2rem;
+  border-radius: var(--radius-300);
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  box-shadow: none !important;
+}
+.btn img {
+  transition: all 0.3s;
+}
+.btn:not(:hover) img {
+  rotate: -45deg;
+}
+.btn-primary, .btn-primary:hover {
+  background-color: var(--clr-primary-300);
+  border-color: var(--clr-primary-300);
+}
+.btn-primary:focus-within, .btn-primary:focus, .btn-primary:active, .btn-primary:hover:focus-within, .btn-primary:hover:focus, .btn-primary:hover:active {
+  background-color: var(--clr-primary-400) !important;
+  border-color: var(--clr-primary) !important;
+}
+
+.code-btn {
   font-size: 1.6rem;
   color: var(--clr-text-500);
 }
-.my-btn::before {
+.code-btn::before {
   content: "[ ";
 }
-.my-btn::after {
+.code-btn::after {
   content: " ]";
 }
 
@@ -321,14 +355,53 @@ button {
   flex-shrink: 0;
 }
 
+.form-control {
+  font-size: 1.4rem;
+  padding: 1.6rem 2rem;
+  border: 1px solid var(--card-border);
+  background-color: var(--card-bg);
+  color: var(--clr-text-500) !important;
+  border-radius: var(--radius-300);
+  box-shadow: none !important;
+}
+.form-control::-moz-placeholder {
+  color: var(--clr-neutral-400);
+}
+.form-control::placeholder {
+  color: var(--clr-neutral-400);
+}
+.form-control:focus-within {
+  border-color: var(--clr-primary-400);
+  background-color: var(--card-bg);
+}
+
+textarea.form-control {
+  min-height: 16rem;
+}
+
+.social-list__link {
+  transition: 0.3s;
+}
+.social-list__link:hover {
+  color: var(--clr-primary-300);
+}
+
+.footer__wrapper {
+  border-top: 1px solid var(--card-border);
+}
+
 .header {
   isolation: isolate;
+  transition: all 0.3s;
+  width: 100%;
 }
-.header__nav-link, .header__social-link, .header__logo-link {
-  color: var(--clr-text);
-}
-.header__nav-link {
+
+.nav-list__link {
   color: var(--clr-text-500);
+  transition: all 0.3s;
+}
+.nav-list__link:hover {
+  color: var(--clr-primary-300);
 }
 
 @media (max-width: 991.98px) {
@@ -346,12 +419,6 @@ button {
     max-height: 0;
     opacity: 0;
     z-index: -1;
-  }
-  .header__nav-list {
-    flex-direction: column;
-  }
-  .header__social-list {
-    margin-top: 3rem;
   }
   .header__toggle-btn {
     background: none;
@@ -565,6 +632,31 @@ button {
   top: 0.5rem;
 }
 
+.skills__heading {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--clr-secondary-400);
+}
+
+.contact__success {
+  padding: 2rem;
+  background-color: var(--card-border);
+  border-radius: var(--radius-400);
+}
+.contact__item-icon-box {
+  height: 6rem;
+  width: 6rem;
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-400);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact__item-heading {
+  font-size: 1.4rem;
+}
+
 .dark-mode .education span {
   color: var(--clr-neutral-0);
 }
@@ -578,5 +670,41 @@ button {
   }
   .portfolio__title {
     font-size: 2.4rem;
+  }
+}
+@media (min-width: 992px) {
+  .skills__content {
+    border-left: 1px solid var(--card-border);
+  }
+  .skills .card-box {
+    position: relative;
+    overflow: hidden;
+  }
+  .skills .card-box::after {
+    content: "";
+    display: inline-block;
+    height: 8rem;
+    width: 8rem;
+    border: 1px solid var(--card-border);
+    position: absolute;
+    bottom: 3rem;
+    left: 3rem;
+    border-radius: 50%;
+    box-shadow: 0 0 0 20px var(--card-bg), 0 0 0 21px var(--card-border), 0 0 0 61px var(--card-bg), 0 0 0 62px var(--card-border);
+  }
+  .skills .card-box::before {
+    content: "";
+    display: inline-block;
+    height: 8rem;
+    width: 8rem;
+    border: 1px solid var(--card-border);
+    position: absolute;
+    right: -5rem;
+    top: -3rem;
+    border-radius: 50%;
+    box-shadow: 0 0 0 20px var(--card-bg), 0 0 0 21px var(--card-border), 0 0 0 61px var(--card-bg), 0 0 0 62px var(--card-border);
+  }
+  .contact #contactForm {
+    min-height: 38rem;
   }
 }/*# sourceMappingURL=main.css.map */

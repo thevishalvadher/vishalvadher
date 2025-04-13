@@ -50,7 +50,33 @@ button{
     background: transparent;
     border: none;
 }
-.my-btn{
+.btn{
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 1.6rem 2rem;
+    border-radius: var(--radius-300);
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    box-shadow: none !important;
+    img{
+        transition: all 0.3s;
+    }
+    &:not(:hover){
+        img{
+            rotate: -45deg;
+        }
+    }
+    &-primary, &-primary:hover{
+        background-color: var(--clr-primary-300);
+        border-color: var(--clr-primary-300);
+        &:focus-within, &:focus, &:active{
+            background-color: var(--clr-primary-400) !important;
+            border-color: var(--clr-primary) !important;
+        }
+    }
+}
+.code-btn{
     font-size: 1.6rem;
     color: var(--clr-text-500);
     &::before{

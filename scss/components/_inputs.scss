@@ -1,0 +1,19 @@
+.form-control{
+    font-size: 1.4rem;
+    padding: 1.6rem 2rem;
+    border:1px solid var(--card-border);
+    background-color: var(--card-bg);
+    color: var(--clr-text-500) !important;
+    border-radius: var(--radius-300);
+    box-shadow: none !important;
+    &::placeholder{
+        color: var(--clr-neutral-400);
+    }
+    &:focus-within{
+        border-color: var(--clr-primary-400);
+        background-color: var(--card-bg);
+    }
+}
+textarea.form-control{
+    min-height: 16rem;  
+}

@@ -177,6 +177,35 @@
         }
     }
 }
+.skills{
+    &__heading{
+        // text-transform: uppercase;
+        font-size: 1.4rem;
+        // letter-spacing: 0.1rem;
+        font-weight: 600;
+        color: var(--clr-secondary-400);
+    }
+}
+.contact{
+    &__success{
+        padding: 2rem;
+        background-color: var(--card-border);
+        border-radius: var(--radius-400);
+    }
+    &__item-icon-box{
+        height:6rem;
+        width: 6rem;
+        background-color: var(--card-bg);
+        border: 1px solid var(--card-border);
+        border-radius: var(--radius-400);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__item-heading{
+        font-size: 1.4rem;
+    }
+}
 .dark-mode{
     .education{
         span{
@@ -200,6 +229,55 @@
     .portfolio{
         &__title{
             font-size: 2.4rem;
+        }
+    }
+    
+}
+@media(min-width:992px){
+    .skills{
+        &__content{
+            border-left: 1px solid var(--card-border);
+        }
+        .card-box{
+            position: relative;
+            overflow: hidden;
+            &::after{
+                content: '';
+                display: inline-block;
+                height: 8rem;
+                width: 8rem;
+                border: 1px solid var(--card-border);
+                position: absolute;
+                bottom: 3rem;
+                left: 3rem;
+                border-radius: 50%;
+                box-shadow: 
+                0 0 0 20px var(--card-bg), 
+                0 0 0 21px var(--card-border),
+                0 0 0 61px var(--card-bg),
+                0 0 0 62px var(--card-border);
+            }
+            &::before{
+                content: '';
+                display: inline-block;
+                height: 8rem;
+                width: 8rem;
+                border: 1px solid var(--card-border);
+                position: absolute;
+                right:-5rem;
+                top:-3rem;
+                border-radius: 50%;
+                box-shadow: 
+                0 0 0 20px var(--card-bg), 
+                0 0 0 21px var(--card-border),
+                0 0 0 61px var(--card-bg),
+                0 0 0 62px var(--card-border);
+            }
+        }
+    }
+    .contact{
+        #contactForm{
+            min-height: 38rem;
         }
     }
 }

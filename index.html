@@ -14,6 +14,12 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="scss/main.css">
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("Y6WnSIFh9tNg30qfA"); // Replace with your EmailJS Public Key
+        })();
+    </script>
 </head>
 
 <body>
@@ -23,63 +29,41 @@
             <div class="card-box | px-md-5 p-4  rounded position-relative">
                 <nav class="header__nav | d-flex align-items-center justify-content-between"
                     aria-label="main navigation">
-                    <a href="#" class="header__logo-link | d-flex align-items-center gap-3 fw-medium">
-                        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g clip-path="url(#clip0_4554_3239)">
-                                <path
-                                    d="M35.7761 17.4597L26.5883 8.27189C26.3026 7.98619 25.7971 7.98619 25.5114 8.27189L23.5195 10.2638C23.222 10.5613 23.222 11.0436 23.5195 11.3411L30.1771 17.998L23.5199 24.656C23.2224 24.9535 23.2224 25.4357 23.5199 25.7333L25.5118 27.7252C25.6547 27.868 25.8486 27.9488 26.0505 27.9488C26.252 27.9488 26.4463 27.868 26.5891 27.7252L35.7761 18.5377C36.0737 18.2399 36.0737 17.7572 35.7761 17.4597Z"
-                                    fill="#62A92B" />
-                                <path
-                                    d="M12.4784 24.6563L5.82192 17.9991L12.4795 11.3422C12.6224 11.1994 12.7028 11.0059 12.7028 10.8036C12.7028 10.6017 12.6228 10.4078 12.4795 10.2649L10.4876 8.27303C10.3448 8.13018 10.1509 8.0498 9.94898 8.0498C9.74709 8.0498 9.55319 8.13018 9.41034 8.27303L0.222157 17.4601C-0.0753544 17.7576 -0.0753544 18.2399 0.222157 18.5377L9.40996 27.7252C9.55281 27.868 9.74671 27.9488 9.9486 27.9488C10.1505 27.9488 10.3444 27.868 10.4872 27.7252L12.4792 25.7332C12.7767 25.4361 12.7767 24.9539 12.4784 24.6563Z"
-                                    fill="#62A92B" />
-                                <path
-                                    d="M23.2241 5.18119C23.1273 5.00367 22.9643 4.87187 22.7708 4.81473L21.156 4.33817C20.7529 4.21856 20.3286 4.44979 20.2097 4.8532L12.7133 30.2399C12.6561 30.4338 12.6782 30.6422 12.7746 30.8193C12.871 30.9972 13.0344 31.1287 13.2279 31.1862L14.8427 31.6627C14.9147 31.6841 14.9875 31.6943 15.0587 31.6943C15.3874 31.6943 15.691 31.4795 15.789 31.1477L23.2854 5.76059C23.3425 5.56669 23.3208 5.35832 23.2241 5.18119Z"
-                                    fill="#62A92B" />
-                            </g>
-                            <defs>
-                                <clipPath id="clip0_4554_3239">
-                                    <rect width="36" height="36" fill="white" />
-                                </clipPath>
-                            </defs>
+                    <a href="/" class="header__logo-link | d-inline-flex align-items-center gap-2 fw-medium">
+                        <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.70711 4.29289C6.09763 4.68342 6.09763 5.31658 5.70711 5.70711L2.41421 9L5.70711 12.2929C6.09763 12.6834 6.09763 13.3166 5.70711 13.7071C5.31658 14.0976 4.68342 14.0976 4.29289 13.7071L0.292893 9.70711C-0.0976311 9.31658 -0.0976311 8.68342 0.292893 8.29289L4.29289 4.29289C4.68342 3.90237 5.31658 3.90237 5.70711 4.29289Z" fill="#62A92B"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M14.2929 4.29289C14.6834 3.90237 15.3166 3.90237 15.7071 4.29289L19.7071 8.29289C20.0976 8.68342 20.0976 9.31658 19.7071 9.70711L15.7071 13.7071C15.3166 14.0976 14.6834 14.0976 14.2929 13.7071C13.9024 13.3166 13.9024 12.6834 14.2929 12.2929L17.5858 9L14.2929 5.70711C13.9024 5.31658 13.9024 4.68342 14.2929 4.29289Z" fill="#62A92B"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.2425 0.0298499C12.7783 0.163799 13.1041 0.706733 12.9701 1.24253L8.97013 17.2425C8.83619 17.7783 8.29325 18.1041 7.75746 17.9701C7.22166 17.8362 6.8959 17.2933 7.02985 16.7575L11.0299 0.757457C11.1638 0.221662 11.7067 -0.104099 12.2425 0.0298499Z" fill="#62A92B"/>
                         </svg>
-                        <span class="header__logo-txt">Vishal Vadher</span>
+                        <span class="header__logo-txt | fw-semibold text-neutral-800">Vishal Vadher</span>
                     </a>
                     <div class="header__collapse | d-flex align-items-center flex-grow-1">
-                        <ul class="header__nav-list | d-flex align-items-center gap-5 mx-auto">
-                            <li><a href="#" class="header__nav-link">About me</a></li>
-                            <li><a href="#" class="header__nav-link">Resume</a></li>
-                            <li><a href="#" class="header__nav-link">Services</a></li>
-                            <li><a href="#" class="header__nav-link">Portfolio</a></li>
-                            <li><a href="#" class="header__nav-link">Contact</a></li>
+                        <ul class="nav-list | d-flex align-items-center gap-5 mx-auto flex-column flex-lg-row">
+                            <li><a href="#portfolioSection" class="nav-list__link">Portfolio</a></li>
+                            <li><a href="#offerSection" class="nav-list__link">Services</a></li>
+                            <li><a href="#experinceSection" class="nav-list__link">Resume</a></li>
+                            <li><a href="#skillsSection" class="nav-list__link">Skills</a></li>
+                            <li><a href="#contactSection" class="nav-list__link">Contact</a></li>
                         </ul>
-                        <ul class="header__social-list | d-flex align-items-center gap-4">
+                        <ul class="social-list | d-flex align-items-center gap-4 mt-5 mt-lg-0">
                             <li>
-                                <a href="#" class="header__social-link" aria-label="twitter profile link">
-                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M6 1.5H0.75L6.94565 9.76087L1.08746 16.4999H3.07498L7.86623 10.9883L12 16.5H17.25L10.7938 7.89172L16.3501 1.5H14.3626L9.87322 6.66434L6 1.5ZM12.75 15L3.75 3H5.25L14.25 15H12.75Z"
-                                            fill="currentColor" />
+                                <a href="#" class="social-list__link | text-neutral-800" aria-label="twitter profile link">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6 1.5H0.75L6.94565 9.76087L1.08746 16.4999H3.07498L7.86623 10.9883L12 16.5H17.25L10.7938 7.89172L16.3501 1.5H14.3626L9.87322 6.66434L6 1.5ZM12.75 15L3.75 3H5.25L14.25 15H12.75Z" fill="currentColor"></path>
                                     </svg>
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="header__social-link" aria-label="linkedin profile link">
-                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M5.20536 3.74995C5.20508 4.36068 4.83456 4.91026 4.2685 5.13955C3.70245 5.36884 3.0539 5.23204 2.62867 4.79366C2.20345 4.35528 2.08646 3.70286 2.33287 3.14405C2.57929 2.58524 3.1399 2.23162 3.75036 2.24995C4.56116 2.27428 5.20573 2.93878 5.20536 3.74995ZM5.25036 6.35995H2.25036V15.7499H5.25036V6.35995ZM9.99038 6.35995H7.00536V15.7499H9.96038V10.8224C9.96038 8.07742 13.5379 7.82242 13.5379 10.8224V15.7499H16.5004V9.80242C16.5004 5.17495 11.2054 5.34745 9.96038 7.61992L9.99038 6.35995Z"
-                                            fill="currentColor" />
+                                <a href="#" class="social-list__link | text-neutral-800" aria-label="linkedin profile link">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5.20536 3.74995C5.20508 4.36068 4.83456 4.91026 4.2685 5.13955C3.70245 5.36884 3.0539 5.23204 2.62867 4.79366C2.20345 4.35528 2.08646 3.70286 2.33287 3.14405C2.57929 2.58524 3.1399 2.23162 3.75036 2.24995C4.56116 2.27428 5.20573 2.93878 5.20536 3.74995ZM5.25036 6.35995H2.25036V15.7499H5.25036V6.35995ZM9.99038 6.35995H7.00536V15.7499H9.96038V10.8224C9.96038 8.07742 13.5379 7.82242 13.5379 10.8224V15.7499H16.5004V9.80242C16.5004 5.17495 11.2054 5.34745 9.96038 7.61992L9.99038 6.35995Z" fill="currentColor"></path>
                                     </svg>
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="header__social-link" aria-label="github profile link">
-                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M9.00075 1.5C4.85698 1.5 1.50073 4.85625 1.50073 9C1.50073 12.3187 3.64761 15.1219 6.62886 16.1156C7.00386 16.1812 7.14448 15.9562 7.14448 15.7594C7.14448 15.5812 7.13511 14.9906 7.13511 14.3625C5.25073 14.7094 4.76323 13.9031 4.61323 13.4812C4.52886 13.2656 4.16323 12.6 3.84448 12.4219C3.58198 12.2812 3.20698 11.9344 3.83511 11.925C4.42573 11.9156 4.84761 12.4687 4.98823 12.6937C5.66323 13.8281 6.74136 13.5094 7.17261 13.3125C7.23823 12.825 7.43511 12.4969 7.65075 12.3094C5.98198 12.1219 4.23823 11.475 4.23823 8.60625C4.23823 7.79062 4.52886 7.11562 5.00698 6.59062C4.93198 6.40312 4.66948 5.63437 5.08198 4.60312C5.08198 4.60312 5.71011 4.40625 7.14448 5.37187C7.7445 5.20312 8.382 5.11875 9.0195 5.11875C9.657 5.11875 10.2945 5.20312 10.8945 5.37187C12.3289 4.39687 12.957 4.60312 12.957 4.60312C13.3695 5.63437 13.107 6.40312 13.032 6.59062C13.5101 7.11562 13.8007 7.78125 13.8007 8.60625C13.8007 11.4844 12.0476 12.1219 10.3789 12.3094C10.6507 12.5437 10.8851 12.9937 10.8851 13.6969C10.8851 14.7 10.8757 15.5062 10.8757 15.7594C10.8757 15.9562 11.0164 16.1906 11.3914 16.1156C14.4442 15.085 16.4999 12.2222 16.5007 9C16.5007 4.85625 13.1445 1.5 9.00075 1.5Z"
-                                            fill="currentColor" />
+                                <a href="#" class="social-list__link | text-neutral-800" aria-label="github profile link">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.00075 1.5C4.85698 1.5 1.50073 4.85625 1.50073 9C1.50073 12.3187 3.64761 15.1219 6.62886 16.1156C7.00386 16.1812 7.14448 15.9562 7.14448 15.7594C7.14448 15.5812 7.13511 14.9906 7.13511 14.3625C5.25073 14.7094 4.76323 13.9031 4.61323 13.4812C4.52886 13.2656 4.16323 12.6 3.84448 12.4219C3.58198 12.2812 3.20698 11.9344 3.83511 11.925C4.42573 11.9156 4.84761 12.4687 4.98823 12.6937C5.66323 13.8281 6.74136 13.5094 7.17261 13.3125C7.23823 12.825 7.43511 12.4969 7.65075 12.3094C5.98198 12.1219 4.23823 11.475 4.23823 8.60625C4.23823 7.79062 4.52886 7.11562 5.00698 6.59062C4.93198 6.40312 4.66948 5.63437 5.08198 4.60312C5.08198 4.60312 5.71011 4.40625 7.14448 5.37187C7.7445 5.20312 8.382 5.11875 9.0195 5.11875C9.657 5.11875 10.2945 5.20312 10.8945 5.37187C12.3289 4.39687 12.957 4.60312 12.957 4.60312C13.3695 5.63437 13.107 6.40312 13.032 6.59062C13.5101 7.11562 13.8007 7.78125 13.8007 8.60625C13.8007 11.4844 12.0476 12.1219 10.3789 12.3094C10.6507 12.5437 10.8851 12.9937 10.8851 13.6969C10.8851 14.7 10.8757 15.5062 10.8757 15.7594C10.8757 15.9562 11.0164 16.1906 11.3914 16.1156C14.4442 15.085 16.4999 12.2222 16.5007 9C16.5007 4.85625 13.1445 1.5 9.00075 1.5Z" fill="currentColor"></path>
                                     </svg>
                                 </a>
                             </li>
@@ -118,10 +102,10 @@
     <!-- main -->
     <main>
         <!-- hero section -->
-        <section class="section hero | mt-5">
+        <section class="section hero | mt-5" id="heroSection">
             <div class="container">
                 <div class="card-box | card-box--section">
-                    <div class="row | align-items-center g-5">
+                    <div class="row | align-items-center gx-lg-5 gy-5 gx-4">
                         <div class="col-lg-4 mx-auto">
                             <div class="hero__img-box">
                                 <img src="img/hero-img.png" alt="hero image" class="hero__img">
@@ -130,7 +114,7 @@
                         <div class="col-lg-7">
                             <span class="mb-4 d-block"><span class="text-secondary-400">&lt;span&gt;</span>Hey, I&apos;m
                                 Vishal<span class="text-secondary-400">&lt;/span&gt;</span></span>
-                            <h1 class="main-heading | mb-4 pb-2">Senior <span class="text-gredient">{Web
+                            <h1 class="main-heading | mb-4 pb-lg-2">Senior <span class="text-gredient">{Web
                                     Designer}</span><br class="d-none d-lg-block">
                                 & Webflow Expert</h1>
                             <p><span class="text-secondary-400 d-none">&lt;p&gt;</span>With expertise in modern web
@@ -142,16 +126,16 @@
                                 together.<span class="text-secondary-400 d-none">&lt;/p&gt;</span></p>
                             <ul class="skills-logo | d-flex align-items-center gap-3 gap-lg-4 my-5 flex-wrap">
                                 <li class="skills-logo__item"><img src="img/html-logo.svg" alt="html logo" title="HTML"
-                                        height="40" width="40" class="object-fit-contain"></li>
+                                        height="36" width="40" class="object-fit-contain"></li>
                                 <li class="skills-logo__item"><img src="img/css-logo.svg" alt="css logo" title="CSS"
-                                        height="40" width="40" class="object-fit-contain"></li>
+                                        height="36" width="40" class="object-fit-contain"></li>
                                 <li class="skills-logo__item"><img src="img/javascript-logo.svg" alt="javascript logo"
-                                        title="JavaScript" height="40" width="40" class="object-fit-contain">
+                                        title="JavaScript" height="36" width="40" class="object-fit-contain">
                                 </li>
                                 <li class="skills-logo__item"><img src="img/bootstrap-logo.svg" alt="bootstrap logo"
-                                        title="Bootstrap" height="40" width="40" class="object-fit-contain"></li>
+                                        title="Bootstrap" height="36" width="40" class="object-fit-contain"></li>
                                 <li class="skills-logo__item"><img src="img/webflow-logo.svg" alt="webflow logo"
-                                        title="Webflow" height="40" width="40" class="object-fit-contain"></li>
+                                        title="Webflow" height="36" width="40" class="object-fit-contain"></li>
                                 <li class="align-self-end">...and more</li>
                             </ul>
                             <div class="d-flex align-items-center gap-3">
@@ -168,7 +152,7 @@
                                         fill="#62A92B" />
                                 </svg>
                                 <a href="docs/Vishal_Vadher_Senior_WebDesigner_Resume.pdf "
-                                    class="my-btn my-btn--primary" role="button" download="">Download Cv</a>
+                                    class="code-btn" role="button" download="">Download Cv</a>
                             </div>
                         </div>
                     </div>
@@ -176,7 +160,7 @@
             </div>
         </section>
         <!-- stats section -->
-        <section class="section stats | mt-5">
+        <section class="section stats | mt-5" id="statsSection">
             <div class="container">
                 <div class="card-box | card-box--section">
                     <div class="row g-5 mx-lg-5">
@@ -209,7 +193,7 @@
             </div>
         </section>
         <!-- portfolio section -->
-        <section class="section portfolio | mt-5">
+        <section class="section portfolio | mt-5" id="portfolioSection">
             <div class="container">
                 <div class="card-box | card-box--section position-relative">
                     <div class="mb-5 pb-lg-3 d-flex align-items-center flex-wrap gap-4 justify-content-between">
@@ -229,14 +213,19 @@
                                 <div class="card-box p-4 p-lg-5 rounded-2">
                                     <div class="row g-4 g-lg-5">
                                         <div class="col-lg-5">
-                                            <img src="img/widewings-thumbnail.webp" alt="project thumbnail" class="portfolio__thumb | rounded-2">
+                                            <img src="img/widewings-thumbnail.webp" alt="project thumbnail"
+                                                class="portfolio__thumb | rounded-2">
                                         </div>
                                         <div class="col-lg-7">
                                             <div class="px-lg-5 pb-4 pb-lg-0">
-                                                <h3 class="portfolio__title | text-primary-300 ff-primary">Widewings Preschool</h3>
-                                                <p class="mt-3">Customized a theme-based preschool website with tailored content, graphics, and SEO for better performance and visibility.</p>
+                                                <h3 class="portfolio__title | text-primary-300 ff-primary">Widewings
+                                                    Preschool</h3>
+                                                <p class="mt-3">Customized a theme-based preschool website with tailored
+                                                    content, graphics, and SEO for better performance and visibility.
+                                                </p>
                                                 <div class="mt-5">
-                                                    <h4 class="text-secondary-400 ff-primary fw-medium">Project Info</h4>
+                                                    <h4 class="text-secondary-400 ff-primary fw-medium">Project Info
+                                                    </h4>
                                                     <ul class="portfolio__info-list | mb-4 mb-lg-5">
                                                         <li
                                                             class="d-md-flex d-grid align-items-center gap-md-4 gap-2 justify-content-between py-3">
@@ -251,12 +240,15 @@
                                                         <li
                                                             class="d-md-flex d-grid align-items-center gap-md-4 gap-2 justify-content-between py-3">
                                                             <h5>Technologies:</h5>
-                                                            <p class="text-md-end">HHTML, CSS, JavaScript, jQuery, SEO</p>
+                                                            <p class="text-md-end">HHTML, CSS, JavaScript, jQuery, SEO
+                                                            </p>
                                                         </li>
                                                     </ul>
-                                                    <a href="https://www.impactiveconsulting.com.sa/" class="portfolio__view-link | text-primary-300 fw-medium pb-2  d-inline-flex gap-3 align-items-center">
-                                                        <img src="img/arrow-right.svg" alt="right arrow icon" height="16"
-                                                        width="16" class="img-primary object-fit-contain">Live Demo</a>
+                                                    <a href="https://www.impactiveconsulting.com.sa/"
+                                                        class="portfolio__view-link | text-primary-300 fw-medium pb-2  d-inline-flex gap-3 align-items-center">
+                                                        <img src="img/arrow-right.svg" alt="right arrow icon"
+                                                            height="16" width="16"
+                                                            class="img-primary object-fit-contain">Live Demo</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -267,14 +259,18 @@
                                 <div class="card-box p-4 p-lg-5 rounded-2">
                                     <div class="row g-4 g-lg-5">
                                         <div class="col-lg-5">
-                                            <img src="img/impactive-thumbnail.webp" alt="project thumbnail" class="portfolio__thumb | rounded-2">
+                                            <img src="img/impactive-thumbnail.webp" alt="project thumbnail"
+                                                class="portfolio__thumb | rounded-2">
                                         </div>
                                         <div class="col-lg-7">
                                             <div class="px-lg-5 pb-4 pb-lg-0">
-                                                <h3 class="portfolio__title | text-primary-300 ff-primary">Impactive</h3>
-                                                <p class="mt-3">Developed a consulting website in Arabic and English with custom RTL and LTR layouts using HTML, CSS, JS, and SCSS.</p>
+                                                <h3 class="portfolio__title | text-primary-300 ff-primary">Impactive
+                                                </h3>
+                                                <p class="mt-3">Developed a consulting website in Arabic and English
+                                                    with custom RTL and LTR layouts using HTML, CSS, JS, and SCSS.</p>
                                                 <div class="mt-5">
-                                                    <h4 class="text-secondary-400 ff-primary fw-medium">Project Info</h4>
+                                                    <h4 class="text-secondary-400 ff-primary fw-medium">Project Info
+                                                    </h4>
                                                     <ul class="portfolio__info-list | mb-4 mb-lg-5">
                                                         <li
                                                             class="d-md-flex d-grid align-items-center gap-md-4 gap-2 justify-content-between py-3">
@@ -284,7 +280,8 @@
                                                         <li
                                                             class="d-md-flex d-grid align-items-center gap-md-4 gap-2 justify-content-between py-3">
                                                             <h5>Features Implemented:</h5>
-                                                            <p class="text-md-end">Arabic & English support with RTL/LTR layouts</p>
+                                                            <p class="text-md-end">Arabic & English support with RTL/LTR
+                                                                layouts</p>
                                                         </li>
                                                         <li
                                                             class="d-md-flex d-grid align-items-center gap-md-4 gap-2 justify-content-between py-3">
@@ -292,9 +289,11 @@
                                                             <p class="text-md-end">HTML, CSS, JavaScript, SCSS</p>
                                                         </li>
                                                     </ul>
-                                                    <a href="https://www.impactiveconsulting.com.sa/" class="portfolio__view-link | text-primary-300 fw-medium pb-2  d-inline-flex gap-3 align-items-center">
-                                                        <img src="img/arrow-right.svg" alt="right arrow icon" height="16"
-                                                        width="16" class="img-primary object-fit-contain">Live Demo</a>
+                                                    <a href="https://www.impactiveconsulting.com.sa/"
+                                                        class="portfolio__view-link | text-primary-300 fw-medium pb-2  d-inline-flex gap-3 align-items-center">
+                                                        <img src="img/arrow-right.svg" alt="right arrow icon"
+                                                            height="16" width="16"
+                                                            class="img-primary object-fit-contain">Live Demo</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -305,14 +304,18 @@
                                 <div class="card-box p-4 p-lg-5 rounded-2">
                                     <div class="row g-4 g-lg-5">
                                         <div class="col-lg-5">
-                                            <img src="img/abysssolutions-thumbnail.webp" alt="project thumbnail" class="portfolio__thumb | rounded-2">
+                                            <img src="img/abysssolutions-thumbnail.webp" alt="project thumbnail"
+                                                class="portfolio__thumb | rounded-2">
                                         </div>
                                         <div class="col-lg-7">
                                             <div class="px-lg-5 pb-4 pb-lg-0">
-                                                <h3 class="portfolio__title | text-primary-300 ff-primary">Abyss Solutions</h3>
-                                                <p class="mt-3">Developed a consulting website in Arabic and English with custom RTL and LTR layouts using HTML, CSS, JS, and SCSS.</p>
+                                                <h3 class="portfolio__title | text-primary-300 ff-primary">Abyss
+                                                    Solutions</h3>
+                                                <p class="mt-3">Developed a consulting website in Arabic and English
+                                                    with custom RTL and LTR layouts using HTML, CSS, JS, and SCSS.</p>
                                                 <div class="mt-5">
-                                                    <h4 class="text-secondary-400 ff-primary fw-medium">Project Info</h4>
+                                                    <h4 class="text-secondary-400 ff-primary fw-medium">Project Info
+                                                    </h4>
                                                     <ul class="portfolio__info-list | mb-4 mb-lg-5">
                                                         <li
                                                             class="d-md-flex d-grid align-items-center gap-md-4 gap-2 justify-content-between py-3">
@@ -322,17 +325,21 @@
                                                         <li
                                                             class="d-md-flex d-grid align-items-center gap-md-4 gap-2 justify-content-between py-3">
                                                             <h5>Features Implemented:</h5>
-                                                            <p class="text-md-end">Custom animations with GSAP, smooth parallax effects</p>
+                                                            <p class="text-md-end">Custom animations with GSAP, smooth
+                                                                parallax effects</p>
                                                         </li>
                                                         <li
                                                             class="d-md-flex d-grid align-items-center gap-md-4 gap-2 justify-content-between py-3">
                                                             <h5>Technologies:</h5>
-                                                            <p class="text-md-end">HTML, SCSS, CSS, JavaScript, GSAP, Parallax</p>
+                                                            <p class="text-md-end">HTML, SCSS, CSS, JavaScript, GSAP,
+                                                                Parallax</p>
                                                         </li>
                                                     </ul>
-                                                    <a href="https://abysssolutions.co/" class="portfolio__view-link | text-primary-300 fw-medium pb-2  d-inline-flex gap-3 align-items-center">
-                                                        <img src="img/arrow-right.svg" alt="right arrow icon" height="16"
-                                                        width="16" class="img-primary object-fit-contain">Live Demo</a>
+                                                    <a href="https://abysssolutions.co/"
+                                                        class="portfolio__view-link | text-primary-300 fw-medium pb-2  d-inline-flex gap-3 align-items-center">
+                                                        <img src="img/arrow-right.svg" alt="right arrow icon"
+                                                            height="16" width="16"
+                                                            class="img-primary object-fit-contain">Live Demo</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -343,14 +350,18 @@
                                 <div class="card-box p-4 p-lg-5 rounded-2">
                                     <div class="row g-4 g-lg-5">
                                         <div class="col-lg-5">
-                                            <img src="img/vanguard-thumb.png" alt="project thumbnail" class="portfolio__thumb | rounded-2">
+                                            <img src="img/vanguard-thumb.png" alt="project thumbnail"
+                                                class="portfolio__thumb | rounded-2">
                                         </div>
                                         <div class="col-lg-7">
                                             <div class="px-lg-5 pb-4 pb-lg-0">
-                                                <h3 class="portfolio__title | text-primary-300 ff-primary">Vanguard 7</h3>
-                                                <p class="mt-3">Built a pixel-perfect Webflow site with CMS, boosting performance and easy content updates.</p>
+                                                <h3 class="portfolio__title | text-primary-300 ff-primary">Vanguard 7
+                                                </h3>
+                                                <p class="mt-3">Built a pixel-perfect Webflow site with CMS, boosting
+                                                    performance and easy content updates.</p>
                                                 <div class="mt-5">
-                                                    <h4 class="text-secondary-400 ff-primary fw-medium">Project Info</h4>
+                                                    <h4 class="text-secondary-400 ff-primary fw-medium">Project Info
+                                                    </h4>
                                                     <ul class="portfolio__info-list | mb-4 mb-lg-5">
                                                         <li
                                                             class="d-md-flex d-grid align-items-center gap-md-4 gap-2 justify-content-between py-3">
@@ -368,9 +379,11 @@
                                                             <p class="text-md-end">Webflow</p>
                                                         </li>
                                                     </ul>
-                                                    <a href="https://vanguard7.webflow.io/" class="portfolio__view-link | text-primary-300 fw-medium pb-2  d-inline-flex gap-3 align-items-center">
-                                                        <img src="img/arrow-right.svg" alt="right arrow icon" height="16"
-                                                        width="16" class="img-primary object-fit-contain">Live Demo</a>
+                                                    <a href="https://vanguard7.webflow.io/"
+                                                        class="portfolio__view-link | text-primary-300 fw-medium pb-2  d-inline-flex gap-3 align-items-center">
+                                                        <img src="img/arrow-right.svg" alt="right arrow icon"
+                                                            height="16" width="16"
+                                                            class="img-primary object-fit-contain">Live Demo</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -381,14 +394,17 @@
                                 <div class="card-box p-4 p-lg-5 rounded-2">
                                     <div class="row g-4 g-lg-5">
                                         <div class="col-lg-5">
-                                            <img src="img/plotify-thumbnail.webp" alt="project thumbnail" class="portfolio__thumb | rounded-2">
+                                            <img src="img/plotify-thumbnail.webp" alt="project thumbnail"
+                                                class="portfolio__thumb | rounded-2">
                                         </div>
                                         <div class="col-lg-7">
                                             <div class="px-lg-5 pb-4 pb-lg-0">
                                                 <h3 class="portfolio__title | text-primary-300 ff-primary">Plotify</h3>
-                                                <p class="mt-3">Developed Plotify in Webflow using CMS, HTML, CSS, and JavaScript for real estate listings and content updates.</p>
+                                                <p class="mt-3">Developed Plotify in Webflow using CMS, HTML, CSS, and
+                                                    JavaScript for real estate listings and content updates.</p>
                                                 <div class="mt-5">
-                                                    <h4 class="text-secondary-400 ff-primary fw-medium">Project Info</h4>
+                                                    <h4 class="text-secondary-400 ff-primary fw-medium">Project Info
+                                                    </h4>
                                                     <ul class="portfolio__info-list | mb-4 mb-lg-5">
                                                         <li
                                                             class="d-md-flex d-grid align-items-center gap-md-4 gap-2 justify-content-between py-3">
@@ -406,9 +422,11 @@
                                                             <p class="text-md-end">Webflow, CMS, JavaScript</p>
                                                         </li>
                                                     </ul>
-                                                    <a href="https://www.plotify.co/" class="portfolio__view-link | text-primary-300 fw-medium pb-2  d-inline-flex gap-3 align-items-center">
-                                                        <img src="img/arrow-right.svg" alt="right arrow icon" height="16"
-                                                        width="16" class="img-primary object-fit-contain">Live Demo</a>
+                                                    <a href="https://www.plotify.co/"
+                                                        class="portfolio__view-link | text-primary-300 fw-medium pb-2  d-inline-flex gap-3 align-items-center">
+                                                        <img src="img/arrow-right.svg" alt="right arrow icon"
+                                                            height="16" width="16"
+                                                            class="img-primary object-fit-contain">Live Demo</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -419,14 +437,17 @@
                                 <div class="card-box p-4 p-lg-5 rounded-2">
                                     <div class="row g-4 g-lg-5">
                                         <div class="col-lg-5">
-                                            <img src="img/reunion-thumbnail.webp" alt="project thumbnail" class="portfolio__thumb | rounded-2">
+                                            <img src="img/reunion-thumbnail.webp" alt="project thumbnail"
+                                                class="portfolio__thumb | rounded-2">
                                         </div>
                                         <div class="col-lg-7">
                                             <div class="px-lg-5 pb-4 pb-lg-0">
                                                 <h3 class="portfolio__title | text-primary-300 ff-primary">Reunion</h3>
-                                                <p class="mt-3">Built a calming Webflow site for Reunion Counseling with smooth flow and clear messaging.</p>
+                                                <p class="mt-3">Built a calming Webflow site for Reunion Counseling with
+                                                    smooth flow and clear messaging.</p>
                                                 <div class="mt-5">
-                                                    <h4 class="text-secondary-400 ff-primary fw-medium">Project Info</h4>
+                                                    <h4 class="text-secondary-400 ff-primary fw-medium">Project Info
+                                                    </h4>
                                                     <ul class="portfolio__info-list | mb-4 mb-lg-5">
                                                         <li
                                                             class="d-md-flex d-grid align-items-center gap-md-4 gap-2 justify-content-between py-3">
@@ -436,7 +457,8 @@
                                                         <li
                                                             class="d-md-flex d-grid align-items-center gap-md-4 gap-2 justify-content-between py-3">
                                                             <h5>Features Implemented:</h5>
-                                                            <p class="text-md-end">CMS for services, animated transitions</p>
+                                                            <p class="text-md-end">CMS for services, animated
+                                                                transitions</p>
                                                         </li>
                                                         <li
                                                             class="d-md-flex d-grid align-items-center gap-md-4 gap-2 justify-content-between py-3">
@@ -444,9 +466,11 @@
                                                             <p class="text-md-end">Webflow, CMS</p>
                                                         </li>
                                                     </ul>
-                                                    <a href="https://reunion-site.webflow.io/" class="portfolio__view-link | text-primary-300 fw-medium pb-2  d-inline-flex gap-3 align-items-center">
-                                                        <img src="img/arrow-right.svg" alt="right arrow icon" height="16"
-                                                        width="16" class="img-primary object-fit-contain">Live Demo</a>
+                                                    <a href="https://reunion-site.webflow.io/"
+                                                        class="portfolio__view-link | text-primary-300 fw-medium pb-2  d-inline-flex gap-3 align-items-center">
+                                                        <img src="img/arrow-right.svg" alt="right arrow icon"
+                                                            height="16" width="16"
+                                                            class="img-primary object-fit-contain">Live Demo</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -460,7 +484,7 @@
             </div>
         </section>
         <!-- what do i offer section -->
-        <section class="section offer | mt-5">
+        <section class="section offer | mt-5" id="offerSection">
             <div class="container">
                 <div class="card-box | card-box--section">
                     <div class="text-center | mb-5 pb-lg-3">
@@ -531,7 +555,7 @@
             </div>
         </section>
         <!-- experince section -->
-        <section class="section exp | mt-5">
+        <section class="section exp | mt-5" id="experinceSection">
             <div class="container">
                 <div class="card-box | card-box--section">
                     <div class="mb-5 pb-lg-3">
@@ -628,9 +652,9 @@
             </div>
         </section>
         <!-- education section -->
-        <section class="section education | mt-5">
+        <section class="section education | mt-5" id="educationSection">
             <div class="container">
-                <div class="row | g-5">
+                <div class="row | gx-lg-5 gy-5 gx-4">
                     <div class="col-lg-6">
                         <div class="card-box | card-box--section">
                             <h2 class="secondary-heading | d-inline-flex gap-3 align-items-center"><img
@@ -677,59 +701,237 @@
             </div>
         </section>
         <!-- skills section -->
-        <section class="section skills | mt-5">
+        <section class="section skills | mt-5" id="skillsSection">
             <div class="container">
                 <div class="card-box card-box--section">
                     <div class="text-center | mb-5 pb-lg-3">
                         <span class="text-gredient fw-medium">Skills</span>
                         <h2 class="secondary-heading | mt-2">My Skills</h2>
                     </div>
-                    <div class="row">
+                    <div class="row gx-lg-5 gy-5 gx-4">
                         <div class="col-lg-6">
-                            <ul class="skills-logo | d-flex align-items-center gap-3 gap-lg-4 flex-wrap justify-content-center mx-lg-5">
-                                <li class="skills-logo__item"><img src="img/html-logo.svg" alt="html logo" title="HTML"
-                                        height="40" width="40" class="object-fit-contain"></li>
-                                <li class="skills-logo__item"><img src="img/css-logo.svg" alt="css logo" title="CSS"
-                                        height="40" width="40" class="object-fit-contain"></li>
-                                <li class="skills-logo__item"><img src="img/javascript-logo.svg" alt="javascript logo"
-                                        title="JavaScript" height="40" width="40" class="object-fit-contain">
-                                </li>
-                                <li class="skills-logo__item"><img src="img/bootstrap-logo.svg" alt="bootstrap logo"
-                                        title="Bootstrap" height="40" width="40" class="object-fit-contain"></li>
-                                <li class="skills-logo__item"><img src="img/webflow-logo.svg" alt="webflow logo"
-                                        title="Webflow" height="40" width="40" class="object-fit-contain"></li>
-                                        <li class="skills-logo__item"><img src="img/html-logo.svg" alt="html logo" title="HTML"
-                                            height="40" width="40" class="object-fit-contain"></li>
-                                <li class="skills-logo__item"><img src="img/css-logo.svg" alt="css logo" title="CSS"
-                                        height="40" width="40" class="object-fit-contain"></li>
-                                <li class="skills-logo__item"><img src="img/javascript-logo.svg" alt="javascript logo"
-                                        title="JavaScript" height="40" width="40" class="object-fit-contain">
-                                </li>
-                                <li class="skills-logo__item"><img src="img/bootstrap-logo.svg" alt="bootstrap logo"
-                                        title="Bootstrap" height="40" width="40" class="object-fit-contain"></li>
-                                <li class="skills-logo__item"><img src="img/webflow-logo.svg" alt="webflow logo"
-                                        title="Webflow" height="40" width="40" class="object-fit-contain"></li>
-                                        <li class="skills-logo__item"><img src="img/html-logo.svg" alt="html logo" title="HTML"
-                                            height="40" width="40" class="object-fit-contain"></li>
-                                <li class="skills-logo__item"><img src="img/css-logo.svg" alt="css logo" title="CSS"
-                                            height="40" width="40" class="object-fit-contain"></li>
-                                <li class="skills-logo__item"><img src="img/javascript-logo.svg" alt="javascript logo"
-                                            title="JavaScript" height="40" width="40" class="object-fit-contain">
-                                </li>
+                            <ul
+                                class="skills-logo | d-flex align-items-center gap-3 gap-lg-4 flex-wrap justify-content-center mx-lg-5">
+                                <li class="skills-logo__item"><img src="img/html-logo.svg" alt="HTML logo" title="HTML"
+                                        height="36" width="40" class="object-fit-contain"></li>
+                                <li class="skills-logo__item"><img src="img/css-logo.svg" alt="CSS logo" title="CSS"
+                                        height="36" width="40" class="object-fit-contain"></li>
+                                <li class="skills-logo__item"><img src="img/javascript-logo.svg" alt="JavaScript logo"
+                                        title="JavaScript" height="36" width="40" class="object-fit-contain"></li>
+                                <li class="skills-logo__item"><img src="img/bootstrap-logo.svg" alt="Bootstrap logo"
+                                        title="Bootstrap" height="36" width="40" class="object-fit-contain"></li>
+                                <li class="skills-logo__item"><img src="img/sass-logo.svg" alt="Sass logo" title="Sass"
+                                        height="36" width="40" class="object-fit-contain"></li>
+                                <li class="skills-logo__item"><img src="img/webflow-logo.svg" alt="Webflow logo"
+                                        title="Webflow" height="36" width="40" class="object-fit-contain"></li>
+                                <li class="skills-logo__item"><img src="img/wordpress-logo.svg" alt="WordPress logo"
+                                        title="WordPress" height="36" width="40" class="object-fit-contain"></li>
+                                <li class="skills-logo__item"><img src="img/tailwind-logo.svg" alt="Tailwind CSS logo"
+                                        title="Tailwind CSS" height="36" width="40" class="object-fit-contain"></li>
+                                <li class="skills-logo__item"><img src="img/figma-logo.svg" alt="Figma logo"
+                                        title="Figma" height="36" width="40" class="object-fit-contain"></li>
+                                <li class="skills-logo__item"><img src="img/photoshop-logo.svg"
+                                        alt="Adobe Photoshop logo" title="Adobe Photoshop" height="36" width="40"
+                                        class="object-fit-contain"></li>
+                                <li class="skills-logo__item"><img src="img/illustrator-logo.svg"
+                                        alt="Adobe Illustrator logo" title="Adobe Illustrator" height="36" width="40"
+                                        class="object-fit-contain"></li>
+                                <li class="skills-logo__item"><img src="img/after-effects-logo.svg"
+                                        alt="Adobe After Effects logo" title="Adobe After Effects" height="36"
+                                        width="40" class="object-fit-contain"></li>
+                                <li class="skills-logo__item"><img src="img/adobe-xd-logo.svg" alt="Adobe XD logo"
+                                        title="Adobe XD" height="36" width="40" class="object-fit-contain"></li>
+                                <li class="skills-logo__item"><img src="img/sketch-logo.svg" alt="Sketch logo"
+                                        title="Sketch" height="36" width="40" class="object-fit-contain"></li>
+                                <li class="skills-logo__item"><img src="img/invision-logo.svg" alt="InVision logo"
+                                        title="InVision" height="36" width="40" class="object-fit-contain"></li>
+                                <li class="skills-logo__item"><img src="img/canva-logo.svg" alt="Canva logo"
+                                        title="Canva" height="36" width="40" class="object-fit-contain"></li>
+                                <li class="skills-logo__item"><img src="img/trello-logo.svg" alt="Trello logo"
+                                        title="Trello" height="36" width="40" class="object-fit-contain"></li>
+                                <li class="skills-logo__item"><img src="img/jira-logo.svg" alt="Jira logo" title="Jira"
+                                        height="36" width="40" class="object-fit-contain"></li>
+                                <li class="skills-logo__item"><img src="img/azure-devops-logo.svg"
+                                        alt="Azure DevOps logo" title="Azure DevOps" height="36" width="40"
+                                        class="object-fit-contain"></li>
+
                             </ul>
                         </div>
-                        <div class="col-lg-6">
-                            <ul class="mx-lg-5">
-                                <li>
-                                    <strong>Front-End:</strong> HTML, CSS, JavaScript, React, Angular
+                        <div class="col-lg-6 skills__content">
+                            <ul class="mx-lg-5 vstack gap-4">
+                                <li><strong class="skills__heading | d-block text-neutral-800">Front-End:</strong>
+                                    HTML5, CSS3, SCSS, JavaScript, jQuery, Bootstrap, Webflow, WordPress</li>
+                                <li><strong class="skills__heading | d-block text-neutral-800">Design Tools:</strong>
+                                    Framer, Figma, XD, Photoshop, Sketch, Illustrator, After Effects, Canva</li>
+                                <li><strong class="skills__heading | d-block text-neutral-800">SEO &
+                                        Accessibility:</strong> Meta tags, Schema markup, SEO-friendly design, WCAG
+                                    Guidelines, Screen Reader Compatibility</li>
+                                <li><strong class="skills__heading | d-block text-neutral-800">Animation:</strong> CSS
+                                    Animation, GSAP (GreenSock), Animate On Scroll (AOS), Lottie (JSON-based animations)
                                 </li>
+                                <li><strong class="skills__heading | d-block text-neutral-800">Testing & Version
+                                        Control:</strong> Unit Testing, Browser Testing, Performance Testing, Git,
+                                    GitHub, GitLab</li>
+                                <li><strong class="skills__heading | d-block text-neutral-800">Project
+                                        Management:</strong> Jira, Trello, ClickUp, Azure Boards</li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        <!-- contact section -->
+        <section class="section contact | mt-5 pt-4 pb-5" id="contactSection">
+            <div class="container">
+                <div class="row gx-lg-5 gy-5 gx-4 align-items-center">
+                    <div class="col-lg-6">
+                        <h2 class="secondary-heading | mt-2 text-gredient mb-4">Let's connect</h2>
+                        <form id="contactForm" class="needs-validation" method="POST" novalidate>
+                            <div id="formMain" class="row g-4 ">
+                                <div class="col-lg-6">
+                                    <input type="text" name="user_name" class="form-control" id="validationName"
+                                        placeholder="Your name" required autocomplete="off">
+                                    <div class="invalid-feedback">
+                                        Please enter your name.
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <input type="tel" name="user_phone" class="form-control" id="validationPhone"
+                                        placeholder="Phone number" required inputmode="tel" pattern="^\+?[0-9]{10,15}$" autocomplete="off">
+                                    <div class="invalid-feedback">
+                                        Please enter a valid phone number.
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <input type="email" name="user_email" class="form-control" id="validationEmail"
+                                        placeholder="Email" required autocomplete="new-email">
+                                    <div class="invalid-feedback">
+                                        Please enter a valid email address.
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <input type="text" name="user_subject" class="form-control" id="validationSubject"
+                                        placeholder="Subject" required autocomplete="off">
+                                    <div class="invalid-feedback">
+                                        Please enter a subject.
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <textarea name="message" class="form-control" id="validationTextarea"
+                                        placeholder="Your message" required ></textarea>
+                                    <div class="invalid-feedback">
+                                        Please enter your message.
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-primary" type="submit">
+                                        Send Message
+                                        <img src="img/arrow-right.svg" alt="right arrow icon" height="16" width="16"
+                                            class="img-white object-fit-contain">
+                                    </button>
+                                </div>
+                            </div>
+                            <div id="formSuccess" aria-live="polite" class="contact__success" style="display: none;">
+                                <div class="d-flex gap-4">
+                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M36.0004 3.21574C39.6203 5.30579 42.6316 8.305 44.7361 11.9165C46.8406 15.5279 47.9655 19.6264 47.9992 23.8062C48.033 27.9859 46.9745 32.102 44.9286 35.747C42.8827 39.392 39.9203 42.4394 36.3346 44.5877C32.749 46.736 28.6644 47.9105 24.4853 47.9951C20.3062 48.0797 16.1775 47.0713 12.5079 45.0699C8.83825 43.0685 5.75496 40.1434 3.56324 36.5842C1.37153 33.025 0.147384 28.955 0.0120004 24.7773L0 23.9997L0.0120004 23.2221C0.146409 19.0773 1.35253 15.038 3.51278 11.4981C5.67302 7.9582 8.71368 5.03843 12.3383 3.02346C15.9629 1.00849 20.0478 -0.0329059 24.1947 0.00079259C28.3416 0.0344911 32.4091 1.14214 36.0004 3.21574ZM32.8972 17.5029C32.4839 17.0897 31.9341 16.8415 31.3508 16.8048C30.7675 16.7681 30.1909 16.9455 29.7292 17.3037L29.5036 17.5029L21.6003 25.4037L18.497 22.3029L18.2714 22.1037C17.8096 21.7458 17.2331 21.5686 16.65 21.6054C16.0668 21.6422 15.5172 21.8904 15.104 22.3036C14.6909 22.7167 14.4426 23.2664 14.4058 23.8495C14.369 24.4326 14.5462 25.0091 14.9042 25.4709L15.1034 25.6965L19.9034 30.4965L20.129 30.6957C20.5499 31.0223 21.0675 31.1995 21.6003 31.1995C22.133 31.1995 22.6506 31.0223 23.0715 30.6957L23.2971 30.4965L32.8972 20.8965L33.0964 20.6709C33.4546 20.2092 33.632 19.6326 33.5953 19.0493C33.5587 18.466 33.3104 17.9162 32.8972 17.5029Z" fill="#62A92B"/>
+                                    </svg>
+                                <div>
+                                    <h3 class="sub-heading text-primary-300">Thank You for Reaching Out!</h3>
+                                <p class="mt-2">We've received your message and will get back to you shortly.</p>
+                                </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-lg-5 offset-lg-1">
+                        <ul class="contact__list | vstack gap-4">
+                            <li class="d-flex align-items-center gap-4">
+                                <div class="contact__item-icon-box">
+                                    <img src="img/phone-icon.svg" alt="" height="26" width="26" class="object-fit-contain img-primary">
+                                </div>
+                                <div>
+                                    <h4 class="contact__item-heading">Phone Number</h4>   
+                                    <p class="fw-semibold"><a href="tel:918511310017" class="text-neutral-800">+91 8511310017</a></p> 
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center gap-4">
+                                <div class="contact__item-icon-box">
+                                    <img src="img/email-icon.svg" alt="" height="26" width="26" class="object-fit-contain img-primary">
+                                </div>
+                                <div>
+                                    <h4 class="contact__item-heading">Email</h4>   
+                                    <p class="fw-semibold"><a href="mailto:vishalvadher117@gmail.com" class="text-neutral-800">vishalvadher117@gmail.com</a></p> 
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center gap-4">
+                                <div class="contact__item-icon-box">
+                                    <img src="img/teams-icon.svg" alt="" height="26" width="26" class="object-fit-contain img-primary">
+                                </div>
+                                <div>
+                                    <h4 class="contact__item-heading">Teams</h4>   
+                                    <p class="fw-semibold"><a href="https://teams.microsoft.com/l/chat/0/0?users=live:vishaldvadher" target="_blank" class="text-neutral-800">vishaldvadher</a></p> 
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center gap-4">
+                                <div class="contact__item-icon-box">
+                                    <img src="img/map-pin.svg" alt="" height="26" width="26" class="object-fit-contain img-primary">
+                                </div>
+                                <div>
+                                    <h4 class="contact__item-heading">Address</h4>   
+                                    <p class="text-neutral-800 fw-semibold">Ahmedabad, Gujarat, India</p> 
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+    <footer class="footer | mt-4">
+        <div class="container">
+            <diV class="footer__wrapper | py-5 text-center">
+                <a href="/" class="d-inline-flex align-items-center gap-2 fw-medium">
+                    <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.70711 4.29289C6.09763 4.68342 6.09763 5.31658 5.70711 5.70711L2.41421 9L5.70711 12.2929C6.09763 12.6834 6.09763 13.3166 5.70711 13.7071C5.31658 14.0976 4.68342 14.0976 4.29289 13.7071L0.292893 9.70711C-0.0976311 9.31658 -0.0976311 8.68342 0.292893 8.29289L4.29289 4.29289C4.68342 3.90237 5.31658 3.90237 5.70711 4.29289Z" fill="#62A92B"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.2929 4.29289C14.6834 3.90237 15.3166 3.90237 15.7071 4.29289L19.7071 8.29289C20.0976 8.68342 20.0976 9.31658 19.7071 9.70711L15.7071 13.7071C15.3166 14.0976 14.6834 14.0976 14.2929 13.7071C13.9024 13.3166 13.9024 12.6834 14.2929 12.2929L17.5858 9L14.2929 5.70711C13.9024 5.31658 13.9024 4.68342 14.2929 4.29289Z" fill="#62A92B"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.2425 0.0298499C12.7783 0.163799 13.1041 0.706733 12.9701 1.24253L8.97013 17.2425C8.83619 17.7783 8.29325 18.1041 7.75746 17.9701C7.22166 17.8362 6.8959 17.2933 7.02985 16.7575L11.0299 0.757457C11.1638 0.221662 11.7067 -0.104099 12.2425 0.0298499Z" fill="#62A92B"/>
+                    </svg>
+                    <span class="fw-semibold text-neutral-800">Vishal Vadher</span>
+                </a>
+                <ul class="social-list | d-flex align-items-center gap-4 justify-content-center mt-4">
+                    <li>
+                        <a href="#" class="social-list__link | text-neutral-800" aria-label="twitter profile link">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 1.5H0.75L6.94565 9.76087L1.08746 16.4999H3.07498L7.86623 10.9883L12 16.5H17.25L10.7938 7.89172L16.3501 1.5H14.3626L9.87322 6.66434L6 1.5ZM12.75 15L3.75 3H5.25L14.25 15H12.75Z" fill="currentColor"></path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="social-list__link | text-neutral-800" aria-label="linkedin profile link">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.20536 3.74995C5.20508 4.36068 4.83456 4.91026 4.2685 5.13955C3.70245 5.36884 3.0539 5.23204 2.62867 4.79366C2.20345 4.35528 2.08646 3.70286 2.33287 3.14405C2.57929 2.58524 3.1399 2.23162 3.75036 2.24995C4.56116 2.27428 5.20573 2.93878 5.20536 3.74995ZM5.25036 6.35995H2.25036V15.7499H5.25036V6.35995ZM9.99038 6.35995H7.00536V15.7499H9.96038V10.8224C9.96038 8.07742 13.5379 7.82242 13.5379 10.8224V15.7499H16.5004V9.80242C16.5004 5.17495 11.2054 5.34745 9.96038 7.61992L9.99038 6.35995Z" fill="currentColor"></path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="social-list__link | text-neutral-800" aria-label="github profile link">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.00075 1.5C4.85698 1.5 1.50073 4.85625 1.50073 9C1.50073 12.3187 3.64761 15.1219 6.62886 16.1156C7.00386 16.1812 7.14448 15.9562 7.14448 15.7594C7.14448 15.5812 7.13511 14.9906 7.13511 14.3625C5.25073 14.7094 4.76323 13.9031 4.61323 13.4812C4.52886 13.2656 4.16323 12.6 3.84448 12.4219C3.58198 12.2812 3.20698 11.9344 3.83511 11.925C4.42573 11.9156 4.84761 12.4687 4.98823 12.6937C5.66323 13.8281 6.74136 13.5094 7.17261 13.3125C7.23823 12.825 7.43511 12.4969 7.65075 12.3094C5.98198 12.1219 4.23823 11.475 4.23823 8.60625C4.23823 7.79062 4.52886 7.11562 5.00698 6.59062C4.93198 6.40312 4.66948 5.63437 5.08198 4.60312C5.08198 4.60312 5.71011 4.40625 7.14448 5.37187C7.7445 5.20312 8.382 5.11875 9.0195 5.11875C9.657 5.11875 10.2945 5.20312 10.8945 5.37187C12.3289 4.39687 12.957 4.60312 12.957 4.60312C13.3695 5.63437 13.107 6.40312 13.032 6.59062C13.5101 7.11562 13.8007 7.78125 13.8007 8.60625C13.8007 11.4844 12.0476 12.1219 10.3789 12.3094C10.6507 12.5437 10.8851 12.9937 10.8851 13.6969C10.8851 14.7 10.8757 15.5062 10.8757 15.7594C10.8757 15.9562 11.0164 16.1906 11.3914 16.1156C14.4442 15.085 16.4999 12.2222 16.5007 9C16.5007 4.85625 13.1445 1.5 9.00075 1.5Z" fill="currentColor"></path>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="nav-list | d-flex align-items-center gap-lg-5 gap-4 justify-content-center flex-wrap mt-5">
+                    <li><a href="#portfolioSection" class="nav-list__link">Portfolio</a></li>
+                    <li><a href="#offerSection" class="nav-list__link">Services</a></li>
+                    <li><a href="#experinceSection" class="nav-list__link">Resume</a></li>
+                    <li><a href="#skillsSection" class="nav-list__link">Skills</a></li>
+                    <li><a href="#contactSection" class="nav-list__link">Contact</a></li>
+                </ul>
+            </diV>
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
@@ -748,6 +950,100 @@
                 el: ".swiper-pagination",
                 clickable: true,
             },
+        });
+    </script>
+    <!-- bootstrap validation -->
+    <script>
+        (() => {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            const forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+
+                    form.classList.add('was-validated')
+                }, false)
+            })
+        })()
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const form = document.getElementById('contactForm');
+            const formMain = document.getElementById('formMain'); // updated ID
+            const formSuccess = document.getElementById('formSuccess');
+            const submitButton = form.querySelector('button[type="submit"]');
+
+            form.addEventListener('submit', function (event) {
+                event.preventDefault();
+                event.stopPropagation();
+
+                form.classList.add('was-validated');
+
+                if (form.checkValidity()) {
+                    // Add loading class
+                    form.classList.add('loading');
+                    submitButton.disabled = true;
+
+                    emailjs.sendForm('service_mbwq88k', 'template_dg6oe7i', this, 'Y6WnSIFh9tNg30qfA')
+                        .then(function () {
+                            formMain.style.display = 'none';
+                            formSuccess.style.display = 'block';
+                        }, function (error) {
+                            alert('Something went wrong. Please try again later.');
+                            console.error(error);
+                        })
+                        .finally(function () {
+                            // Remove loading state
+                            form.classList.remove('loading');
+                            submitButton.disabled = false;
+                        });
+                }
+            });
+        });
+    </script>
+    <script>
+      const phoneInput = document.getElementById('validationPhone');
+        // Allow digits and one '+' only at the beginning
+        phoneInput.addEventListener('keypress', function (e) {
+        const char = String.fromCharCode(e.which);
+        const currentValue = phoneInput.value;
+
+        const isNumber = /[0-9]/.test(char);
+        const isPlus = char === '+';
+
+        // Allow '+' only as the first character and only once
+        if (!isNumber && !(isPlus && currentValue.length === 0)) {
+            e.preventDefault();
+        }
+        });
+
+        // Real-time validation
+        phoneInput.addEventListener('input', function () {
+        const phoneValue = phoneInput.value.trim();
+        const phonePattern = /^\+?[0-9]{10,15}$/; // Allows + followed by 10-15 digits
+
+        if (!phonePattern.test(phoneValue)) {
+            phoneInput.setCustomValidity('Please enter a valid phone number.');
+        } else {
+            phoneInput.setCustomValidity('');
+        }
+        });
+    </script>
+    <script>
+        window.addEventListener('scroll', function () {
+          const header = document.querySelector('header'); // Replace with your header selector
+          if (window.scrollY > 0) {
+            header.classList.add('active');
+          } else {
+            header.classList.remove('active');
+          }
         });
     </script>
 </body>

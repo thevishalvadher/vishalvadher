@@ -1,6 +1,9 @@
 .text-secondary-400{
     color: var(--clr-secondary-400);
 }
+.text-neutral-800{
+    color: var(--clr-text);
+}
 .text-primary-300{
     color: var(--clr-primary-300);
 }
@@ -29,4 +32,7 @@
 }
 .img-primary{
     filter:var(--filter-primary);
+}
+.img-white{
+    filter: var(--filter-white);
 }
